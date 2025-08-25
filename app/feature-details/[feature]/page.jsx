@@ -32,39 +32,48 @@ export default function Page({ params }) {
   ];
   return (
     <div className="tw-w-full tw-h-auto tw-bg-white">
-      <section className="relative bg-blue-50 py-16 px-6">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start md:items-center">
-          {/* Left content */}
-          <div className="md:w-2/3 space-y-6">
-            <h2 className="text-3xl font-semibold text-blue-900">{parsedFeature?.title}</h2>
-            <p className="text-gray-700 text-base leading-relaxed font-['Segoe_UI'] text-[16px]">
-           {parsedFeature?.desc}
-            </p>
+     <section className="relative bg-gradient-to-br from-blue-50 via-white to-blue-100 py-20 px-6">
+  <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    
+    {/* Left Content */}
+    <div className="space-y-6">
+      <h2 className="text-4xl font-bold text-blue-900 leading-tight">
+        {parsedFeature?.title}
+      </h2>
+      <p className="text-gray-600 text-lg leading-relaxed font-['Segoe_UI']">
+        {parsedFeature?.desc}
+      </p>
 
-            {/* Feature buttons */}
-            <div className="flex flex-wrap gap-4 mt-4">
-              {features.map((feature, idx) => (
-                <button
-                  key={idx}
-                  className="px-5 py-2 border border-blue-500 text-blue-500 rounded-full hover:bg-blue-100 transition"
-                >
-                  {feature}
-                </button>
-              ))}
-            </div>
-          </div>
-        </div>
+      {/* Feature buttons */}
+      <div className="flex flex-wrap gap-3 mt-6">
+        {features.map((feature, idx) => (
+          <button
+            key={idx}
+            className="px-6 py-2 rounded-full border border-blue-600 text-blue-600 font-medium 
+                       hover:bg-blue-600 hover:text-white transition duration-300 shadow-sm"
+          >
+            {feature}
+          </button>
+        ))}
+      </div>
+    </div>
 
-        {/* Optional background icon/pattern */}
-        <div className="absolute top-[20%] right-0 opacity-10 w-[300px] h-[300px]">
-          {/* Replace this with SVG or image pattern */}
-          <img
-            src="/Assts/logo.png"
-            alt="Academics Illustration"
-            className="w-[300px] h-[300px] rounded-2xl"
-          ></img>
-        </div>
-      </section>
+    {/* Right Side with Image */}
+    <div className="relative flex justify-center md:justify-end">
+      <div className="relative w-[280px] h-[280px] md:w-[350px] md:h-[350px]">
+        {/* Background Accent Circle */}
+        <div className="absolute -top-6 -left-6 w-full h-full bg-blue-200 rounded-full blur-2xl opacity-50"></div>
+        
+        <img
+          src="/Assts/logo.png"
+          alt="Academics Illustration"
+          className="relative w-full h-full object-contain rounded-2xl shadow-lg"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
         <section className="max-w-7xl bg-gray-50 mt-10 h-auto mx-auto grid grid-cols- md:grid-cols-1 gap-5 items-center   p-8 shadow-md">
         {/* Top Section: Image + Text */}
         <div className="flex flex-col md:flex-row gap-6 ">

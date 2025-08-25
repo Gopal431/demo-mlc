@@ -18,23 +18,46 @@ export default function ReadyToMakeYSS({ sectionData }) {
           <p className="text-xl text-blue-100 mb-4 max-w-3xl mx-auto">{subtitle}</p>
           <p className="text-lg text-blue-100 mb-10">{description}</p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-          {cards.map((card, index) => (
-            <Card
-              key={index}
-              className="bg-white/20 border-white/30 text-white" 
-            >
-              <CardContent className="p-6 text-center">
-                <card.icon
-                  className="w-8 h-8 mx-auto mb-3"
-                  style={{ color: card.iconColor }}
-                />
-                <h3 className="font-semibold mb-2">{card.title}</h3>
-                <p className="text-sm text-blue-100">{card.desc}</p>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
+      <div>
+  {/* Mobile Slider */}
+  <div className="flex gap-4 overflow-x-auto md:hidden px-2 pb-4">
+    {cards.map((card, index) => (
+      <Card
+        key={index}
+        className="min-w-[250px] flex-shrink-0 bg-white/20 border-white/30 text-white"
+      >
+        <CardContent className="p-6 text-center">
+          <card.icon
+            className="w-8 h-8 mx-auto mb-3"
+            style={{ color: card.iconColor }}
+          />
+          <h3 className="font-semibold mb-2">{card.title}</h3>
+          <p className="text-sm text-blue-100">{card.desc}</p>
+        </CardContent>
+      </Card>
+    ))}
+  </div>
+
+  {/* Desktop Grid */}
+  <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+    {cards.map((card, index) => (
+      <Card
+        key={index}
+        className="bg-white/20 border-white/30 text-white"
+      >
+        <CardContent className="p-6 text-center">
+          <card.icon
+            className="w-8 h-8 mx-auto mb-3"
+            style={{ color: card.iconColor }}
+          />
+          <h3 className="font-semibold mb-2">{card.title}</h3>
+          <p className="text-sm text-blue-100">{card.desc}</p>
+        </CardContent>
+      </Card>
+    ))}
+  </div>
+</div>
+
         <div className="text-center">
           <div className="bg-white/20 rounded-lg p-8 mb-8 max-w-2xl mx-auto"> 
             <div className="flex items-center justify-center gap-4 mb-6">

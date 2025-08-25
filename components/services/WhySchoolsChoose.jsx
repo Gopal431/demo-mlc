@@ -6,7 +6,7 @@ export default function WhySchoolsChoose() {
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-6">
             Why Schools in India Trust MyLeading Campus®
           </h2>
         </div>

@@ -62,7 +62,7 @@ const AboutSection2 = () => {
   };
 
   return (
-    <section className="relative pb-12 overflow-hidden pt-12 px-4 md:px-8 lg:px-16">
+    <section className="relative pb-0 md:pb-12 overflow-hidden pt-12 px-4 md:px-8 lg:px-16">
       <div className="container">
         {/* Desktop View */}
         <div className="hidden md:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 h-full">
@@ -90,9 +90,9 @@ const AboutSection2 = () => {
             {aboutInfo.map((item, index) => (
               <div key={index} data-aos="zoom-in-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="400">
                 <div className="box-one bg-[#FFFCFC] shadow-md rounded-lg px-8 py-6 border-[#d4d4d4] border border-solid relative">
-                  <img src={item.img} alt="" className='w-full h-auto mt-8' />
+                 <Image src={item.img} alt=""   className='w-full h-auto mt-8' />
                   <div className={`box-info ${item.boxInfoStyles}`}>
-                    <img src={item.boxInfoImg} alt="" className="w-full h-auto" />
+                    <Image src={item.boxInfoImg} alt="" className="w-full h-auto" />
                   </div>
                   <h2 className={`text-[20px] font-semibold text-[#141414] mb-2 mt-4 ${index === aboutInfo.length - 1 ? 'pt-4' : ''}`}>
                     {item.heading}

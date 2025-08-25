@@ -27,7 +27,7 @@ const AboutSection = () => {
     <section className="aboutUs text-[#141414] relative pt-12 bg-gradient-to-r from-white to-[#634fe644]
      via-transparent via-90% overflow-hidden">
       <div className="container">
-        <div className="text-center sm:text-left mx-auto sm:mx-0" data-aos="zoom-in-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="400">
+        <div className="text-left sm:text-left mx-auto sm:mx-0" data-aos="zoom-in-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="400">
           <h4 className='text-[#542DFF] text-xl pb-2 font-semibold sm:text-[24px]'>What You Can Do With MyLeading Campus<sup>®</sup> <span className='w-44 h-[2px] mx-auto sm:mx-0 bg-[#542DFF] inline-block align-middle ml-3'></span> </h4>
           <h2 className='font-[Helvetica] font-bold text-[20px] sm:text-[35px] mb-3 capitalize'>Complete Web ERP & Mobile App for Schools
           </h2>

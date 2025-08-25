@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-
+import { GoChevronDown, GoChevronUp } from "react-icons/go";
 export default function Section10Home({ sectionData }) {
   const { title, subtitle, faqs } = sectionData;
   const [activeIndex, setActiveIndex] = useState(null);
@@ -50,11 +50,12 @@ export default function Section10Home({ sectionData }) {
                     </span>
                     {activeIndex === index ? (
                       <span className="w-8 h-8 bg-black rounded-full flex items-center justify-center text-white">
-                        &times;
+                      <GoChevronUp />
                       </span>
                     ) : (
                       <span className="w-8 h-8 bg-[#F3F5F6] rounded-full flex items-center justify-center text-black">
-                        +
+                       <GoChevronDown />
+
                       </span>
                     )}
                   </button>

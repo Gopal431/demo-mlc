@@ -4,7 +4,7 @@ import React from 'react'
 
 const AboutSec2 = ({lineColor, dotColor, lineWidth}) => {
   return (
-    <section className='my-10 secbanner p-10 mt-0'>
+    <section className='my-10 secbanner md:p-10 p-1 mt-0'>
          <div className="container">
              <h2 className='text-[18px] leading-0 sm:text-4xl font-medium text-center mt-12 mb-5 text-[#633EFF]'>Welcome to <span className='text-[18px] sm:text-4xl font-medium bg-gradient-to-r from-[#633EFF] from-20% via-[#FF335E] via-50% to-[#00ACCE] to-90% bg-clip-text text-transparent text-center mb-[40px] '>MyLeading Campus®</span></h2>
              <div className="grid grid-cols-1 text-[#000]">

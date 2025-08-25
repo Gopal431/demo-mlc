@@ -10,7 +10,12 @@ import BenefitsforSchools from "@/components/services/BenefitsforSchools";
 import WhyChooseMLC from "@/components/services/WhyChooseMLC ";
 import ReadytoMakeYSS from "@/components/services/ReadytoMakeYSS";
 import { FaUsers, FaClock, FaShieldAlt, FaBolt } from "react-icons/fa";
-
+import { HiOutlineCalendarDateRange } from "react-icons/hi2";
+import { GiTennisCourt } from "react-icons/gi";
+import { PiMoneyWavyThin,PiExamLight } from "react-icons/pi";
+import { VscFileSubmodule } from "react-icons/vsc";
+import { MdOutlineLocalLibrary ,MdEmojiTransportation, MdOutlineCurrencyRupee} from "react-icons/md";
+import { HiOutlineDevicePhoneMobile } from "react-icons/hi2";
 function page() {
 
   const headerContent = {
@@ -24,15 +29,15 @@ function page() {
 
 
   const featuresData = [
-    { title: "Digital Admissions", desc: "Manage applications, entrance tests, and seat allotment online." },
-    { title: "Course & Curriculum Management", desc: "Handle multiple programs, subjects, and batches with ease." },
-    { title: "Fee & Finance Automation", desc: "Online fee collection with instant receipts and real-time tracking." },
-    { title: "Exams & Results", desc: "Generate hall tickets, automate grading, publish results online." },
-    { title: "Placement Module", desc: "Track placement drives, company visits, and student records." },
-    { title: "Library Management", desc: "Issue, renew, and track books digitally." },
-    { title: "Hostel & Transport", desc: "Manage room allotments, mess, and bus routes with GPS tracking." },
-    { title: "HR & Payroll", desc: "Staff attendance, salary, PF, and performance reports." },
-    { title: "Mobile Apps for Students & Faculty", desc: "Access everything on the go." },
+    { title: "Digital Admissions",  icon: HiOutlineCalendarDateRange, desc: "Manage applications, entrance tests, and seat allotment online." },
+    { title: "Course & Curriculum Management",icon: GiTennisCourt, desc: "Handle multiple programs, subjects, and batches with ease." },
+    { title: "Fee & Finance Automation",icon:PiMoneyWavyThin, desc: "Online fee collection with instant receipts and real-time tracking." },
+    { title: "Exams & Results",icon:PiExamLight, desc: "Generate hall tickets, automate grading, publish results online." },
+    { title: "Placement Module",icon:VscFileSubmodule, desc: "Track placement drives, company visits, and student records." },
+    { title: "Library Management",icon:MdOutlineLocalLibrary, desc: "Issue, renew, and track books digitally." },
+    { title: "Hostel & Transport",icon:MdEmojiTransportation, desc: "Manage room allotments, mess, and bus routes with GPS tracking." },
+    { title: "HR & Payroll",icon:MdOutlineCurrencyRupee, desc: "Staff attendance, salary, PF, and performance reports." },
+    { title: "Mobile Apps for Students & Faculty",icon:HiOutlineDevicePhoneMobile, desc: "Access everything on the go." },
   ];
 
 

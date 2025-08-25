@@ -134,7 +134,7 @@ const Banner = () => {
       `}</style>
 
       <ContactModal openModal={openModal} setOpenModal={setOpenModal} />
-      <section className="banner mt-[2.75rem] md:mt-3 sm:mt-64 md:relative">
+      <section className="banner mt-[1px] md:mt-3 sm:mt-64 md:relative">
         <div className="bg-cover bg-center w-full h-auto flex items-start justify-start">
           <div className="w-full h-full flex items-center banner-bg">
             <div className="max-w-full h-auto md:h-auto sm:max-w-7xl mx-auto p-8 text-start">

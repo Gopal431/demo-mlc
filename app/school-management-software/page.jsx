@@ -5,12 +5,16 @@ import ERPModules from "@/components/services/ERPModules";
 import GraphSection1 from "@/components/services/GraphSection1";
 import GraphSection2 from "@/components/services/GraphSection2";
 import Section10Home from "@/components/home/Section10Home";
-
+import { HiOutlineCalendarDateRange } from "react-icons/hi2";
 import BenefitsforSchools from "@/components/services/BenefitsforSchools";
 import WhyChooseMLC from "@/components/services/WhyChooseMLC ";
 import ReadytoMakeYSS from "@/components/services/ReadytoMakeYSS";
 import { FaUsers, FaClock, FaShieldAlt } from "react-icons/fa";
 import { FaBolt } from "react-icons/fa";
+import { PiMoneyWavyThin } from "react-icons/pi";
+import { LiaDigitalTachographSolid } from "react-icons/lia";
+import { GrAppleAppStore } from "react-icons/gr";
+import { MdEmojiTransportation } from "react-icons/md";
 
 function page() {
   const headerContent = {
@@ -25,26 +29,32 @@ function page() {
     {
       title: "Digital Admissions",
       desc: "Collect forms, verify documents, and generate merit lists online.",
+      icon: HiOutlineCalendarDateRange,
     },
     {
       title: "Smart Fee Management",
       desc: "Collect fees via UPI, cards, net banking, with automatic receipts.",
+      icon:PiMoneyWavyThin
     },
     {
       title: "Attendance Automation",
       desc: "Biometric, RFID, or mobile app-based attendance with instant parent alerts.",
+      icon: HiOutlineCalendarDateRange
     },
     {
       title: "Exam & Report Cards",
       desc: "Generate marksheets and progress reports instantly.",
+      icon:LiaDigitalTachographSolid
     },
     {
       title: "Parent App",
       desc: "Real-time updates on homework, notices, and child performance.",
+      icon:GrAppleAppStore
     },
     {
       title: "Transport & GPS Tracking",
       desc: "Ensure student safety with live bus tracking.",
+      icon:MdEmojiTransportation
     },
   ];
   const cardsData = [
@@ -192,7 +202,7 @@ function page() {
       buttonText: "Request a Free Demo",
     },
   };
-  const iconTextColor = "teal";
+  const iconTextColor = "blue";
   return (
     <>
       <Header headerData={headerContent} />

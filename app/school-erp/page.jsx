@@ -10,6 +10,13 @@ import WhyChooseMLC from "@/components/services/WhyChooseMLC ";
 import BenefitsforSchools from "@/components/services/BenefitsforSchools";
 import ReadytoMakeYSS from "@/components/services/ReadytoMakeYSS";
 import { FaUsers, FaClock, FaShieldAlt, FaBolt } from "react-icons/fa";
+import { HiOutlineCalendarDateRange } from "react-icons/hi2";
+import { MdEmojiTransportation, MdOutlineCurrencyRupee, MdOutlineLocalLibrary } from "react-icons/md";
+import { GrAppleAppStore } from "react-icons/gr";
+import { IoAnalytics } from "react-icons/io5";
+import { PiExamLight, PiMoneyWavyThin } from "react-icons/pi";
+import { CgAssign } from "react-icons/cg";
+import { SiBasicattentiontoken } from "react-icons/si";
 
 function page() {
  
@@ -24,16 +31,16 @@ function page() {
 
  
   const featuresData = [
-    { title: "Digital Admissions & Enrolment", desc: "Manage student applications, verification, and enrolment online." },
-    { title: "Smart Fee Collection & Reports", desc: "Collect fees digitally with automated receipts and analytics." },
-    { title: "HR & Payroll Management", desc: "Track staff attendance, salary, PF, and performance reports." },
-    { title: "Library & Inventory Tracking", desc: "Issue, renew, and manage books and resources efficiently." },
-    { title: "Attendance via Mobile or Biometric", desc: "Automate attendance for students and staff with instant updates." },
-    { title: "Homework & Assignment Uploads", desc: "Teachers can upload and share homework digitally." },
-    { title: "Marks & Exam Result Management", desc: "Generate marksheets, report cards, and progress reports instantly." },
-    { title: "Performance Analytics", desc: "Analyze student performance with comprehensive dashboards." },
-    { title: "Dedicated Mobile Apps", desc: "Keep parents and students updated with real-time notifications and updates." },
-    { title: "GPS Bus Tracking", desc: "Ensure student safety with live bus tracking." },
+    { title: "Digital Admissions & Enrolment", icon: HiOutlineCalendarDateRange, desc: "Manage student applications, verification, and enrolment online." },
+    { title: "Smart Fee Collection & Reports",icon: PiMoneyWavyThin, desc: "Collect fees digitally with automated receipts and analytics." },
+    { title: "HR & Payroll Management",icon: MdOutlineCurrencyRupee, desc: "Track staff attendance, salary, PF, and performance reports." },
+    { title: "Library & Inventory Tracking",icon: MdOutlineCurrencyRupee, desc: "Issue, renew, and manage books and resources efficiently." },
+    { title: "Attendance via Mobile or Biometric",icon: SiBasicattentiontoken, desc: "Automate attendance for students and staff with instant updates." },
+    { title: "Homework & Assignment Uploads",icon: CgAssign, desc: "Teachers can upload and share homework digitally." },
+    { title: "Marks & Exam Result Management",icon: PiExamLight, desc: "Generate marksheets, report cards, and progress reports instantly." },
+    { title: "Performance Analytics",icon: IoAnalytics, desc: "Analyze student performance with comprehensive dashboards." },
+    { title: "Dedicated Mobile Apps",icon: GrAppleAppStore, desc: "Keep parents and students updated with real-time notifications and updates." },
+    { title: "GPS Bus Tracking",icon: MdEmojiTransportation, desc: "Ensure student safety with live bus tracking." },
   ];
 
  

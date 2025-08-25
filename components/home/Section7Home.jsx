@@ -46,7 +46,7 @@ const Section7Home = () => {
           <Image
             src={vs || "/placeholder.svg"}
             alt="VS"
-            className="w-[12%] md:w-[3%] h-auto absolute top-[1350px] md:top-[400px] right-[45%] md:right-[30.5%] z-10"
+            className="w-[12%] md:w-[3%] h-auto absolute top-[1305px] md:top-[450px] right-[45%] md:right-[31%] z-10"
             data-aos="zoom-in-up"
             data-aos-offset="200"
             data-aos-easing="ease-in-sine"
@@ -55,7 +55,7 @@ const Section7Home = () => {
         </div>
 
         <h2
-          className="font-[Helvetica] font-bold text-[24px] sm:text-[40px] mb-2 capitalize text-center text-[#111827]"
+          className="font-[Helvetica] font-bold text-[24px] sm:text-[40px] mb-2 capitalize md:text-center text-left text-[#111827]"
           data-aos="zoom-in-up"
           data-aos-offset="200"
           data-aos-easing="ease-in-sine"
@@ -65,7 +65,7 @@ const Section7Home = () => {
         </h2>
 
         <h3
-          className="text-[18px] sm:text-3xl font-medium text-center text-[#111827]"
+          className="text-[18px] sm:text-3xl font-medium md:text-center text-left text-[#111827]"
           data-aos="zoom-in-up"
           data-aos-offset="200"
           data-aos-easing="ease-in-sine"
@@ -75,7 +75,7 @@ const Section7Home = () => {
         </h3>
 
         <h3
-          className="text-[16px] sm:text-lg w-full sm:w-[80%] md:w-[70%] text-center mt-4 sm:mt-7 text-[#111827]"
+          className="text-[16px] font-normal w-full sm:w-[80%] md:w-[70%] md:text-center text-left mt-4 sm:mt-7 text-[#111827]"
           data-aos="zoom-in-up"
           data-aos-offset="200"
           data-aos-easing="ease-in-sine"
@@ -85,7 +85,7 @@ const Section7Home = () => {
           that value simplicity and efficiency
         </h3>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 mt-[30px] md:mt-[130px] gap-5 md:gap-7 relative w-full">
+        <div className="grid grid-cols-1 md:grid-cols-3 mt-[30px] md:mt-[130px] gap-5 md:gap-16 relative w-full">
           {/* Features Column */}
           <div
             className="col-span-1 mt-[85px] md:mt-[3px]"
@@ -149,7 +149,7 @@ const Section7Home = () => {
 
           {/* With MyLeading Campus Column */}
           <div
-            className="col-span-1 flex flex-col"
+            className="col-span-1 flex flex-col mt-[60px] md:mt-[3px]"
             data-aos="zoom-in-up"
             data-aos-offset="200"
             data-aos-easing="ease-in-sine"

@@ -59,7 +59,7 @@ const Section6Home = () => {
     };
 
     return (
-        <section className='bg-gradient-to-r from-[#7660FB] from-10% to-[#28A4D9] to-90% py-12'>
+        <section className='bg-gradient-to-r from-[#7660FB] from-10% to-[#28A4D9] to-90% py-20 md:py-12'>
             <div className="container">
                 <h2 className='text-[30px] md:text-[37px] leading-9 md:leading-10 font-semibold text-white' data-aos="zoom-in-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="400">Leading the Way in School Management</h2>
                 <p className='mt-3 text-[20px] md:text-[26px] leading-6 md:leading-[2rem] font-medium bg-gradient-to-r from-[#FBFAFF] to-[#FFEDF1] via-[#F2FDFF] bg-clip-text text-transparent w-[100%] md:w-[83%]' data-aos="zoom-in-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="400">

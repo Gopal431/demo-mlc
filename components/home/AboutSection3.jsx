@@ -3,9 +3,9 @@
 import React, { useEffect } from 'react';
 // import CountUp from 'react-countup';
 import Slider from 'react-slick';
-import calender from '../../public/Assts/calendar.png';
-import sms from '../../public/Assts/smspng.png';
-import monitor from '../../public/Assts/monitor.png';
+import calender from '../../public/Assts/Calendar2.png';
+import sms from '../../public/Assts/sms2.png';
+import monitor from '../../public/Assts/monitor2.png';
 import grow from '../../public/Assts/grow.png';
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -97,10 +97,10 @@ const AboutSection3 = () => {
   return (
     <section className='mb-10'>
       <div className="container text-[#141414]">
-        <h2 className='font-[Helvetica] font-bold text-[24px]  sm:text-[40px] mb-3 capitalize text-center md:text-start' data-aos="zoom-in-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="400">
+        <h2 className='font-[Helvetica] font-bold text-[24px]  sm:text-[40px] mb-3 capitalize text-left md:text-start' data-aos="zoom-in-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="400">
           Growing your School is challenging.
         </h2>
-        <h3 className='text-[18px] sm:text-3xl font-medium text-center md:text-start' data-aos="zoom-in-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="400">
+        <h3 className='text-[18px] sm:text-3xl font-medium text-left md:text-start' data-aos="zoom-in-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="400">
           MyLeading Campus <sup className='text-[18px] sm:text-3xl'>®</sup> makes it easy.
         </h3>
         <div className=" grid-cols-1 md:grid-cols-2 gap-5 mt-10 hidden md:grid">

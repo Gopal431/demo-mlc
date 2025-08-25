@@ -21,7 +21,7 @@ export default async function Page({ params }) {
   return (
     <div>
       {/* Back Button */}
-      <div className="max-w-screen-lg pl-5 pt-28 ">
+      <div className="max-w-screen-lg pl-5 pt-10 md:block hidden">
         <Link
           href="/blog-listing"
           className="inline-block mb-6 px-4 py-2 rounded bg-[#5C4EF8] text-white transition"
@@ -29,23 +29,20 @@ export default async function Page({ params }) {
           ← Back to Blogs
         </Link>
       </div>
+       <div className="max-w-screen-lg pl-5 pt-5 md:hidden block">
+        <Link
+          href="/blog-listing"
+          className="inline-block mb-6 px-2 py-o.5 rounded bg-[#5C4EF8] text-white transition"
+        >
+          ← 
+        </Link>
+      </div>
       <main>
         <article>
-          <header className="mx-auto mt-32 max-w-screen-lg rounded-t-lg bg-white pt-16 text-center shadow-lg">
-            {/* <p className="text-gray-500">
-              Published{" "}
-              {blog?.publishedAt && !isNaN(Date.parse(blog.publishedAt))
-                ? new Date(blog.publishedAt).toLocaleDateString("en-US", {
-                    year: "numeric",
-                    month: "long",
-                    day: "numeric",
-                  })
-                : ""}
-            </p> */}
-            <h1 className="mt-2 text-4xl font-bold text-gray-900 sm:text-5xl">
+          <header className="mx-auto mt-32 max-w-screen-lg rounded-t-lg bg-white pt-5 md:pt-16 text-center shadow-lg">
+            <h1 className="mt-2 md:text-4xl text-lg font-bold text-gray-900 sm:text-5xl px-2">
               {blog?.title}
             </h1>
-            <p className="mt-6 text-lg text-gray-700">{"Sagar"}</p>
             <div className="mt-6 flex flex-wrap justify-center gap-2">
               {blog?.tags?.map((keyword, index) => (
                 <button
@@ -63,7 +60,7 @@ export default async function Page({ params }) {
             />
           </header>
 
-          <div className="mx-auto max-w-screen-lg space-y-12 rounded-b-lg bg-white px-8 pt-10 pb-20 font-serif text-lg tracking-wide text-gray-700 sm:shadow-lg">
+          <div className="mx-auto max-w-screen-lg space-y-12 rounded-b-lg bg-white md:px-8 px-2 md:pt-10 pt-2 pb-20 font-serif text-lg tracking-wide text-gray-700 sm:shadow-lg">
             <div
               className="blog-content"
               dangerouslySetInnerHTML={{
