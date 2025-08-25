@@ -6,7 +6,7 @@ import { FaInstagram, FaSquareFacebook, FaArrowUp } from "react-icons/fa6";
 import Link from "next/link";
 import ContactModal from "../contactModal/ContactModal";
 import { Button } from "antd";
-import TawkMessengerReactUmd from "@tawk.to/tawk-messenger-react";
+// import TawkMessengerReactUmd from "@tawk.to/tawk-messenger-react";
 const Footer = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [openModal, setOpenModal] = useState(false);
@@ -176,16 +176,7 @@ const Footer = () => {
         />
       )}
 
-      {/* Support Button */}
-      <button
-        className="fixed bottom-10 right-28 z-50 "
-        onClick={() => setOpenModal(true)}
-      >
-        <TawkMessengerReactUmd
-          propertyId={"680b3b5a38da73190f9ef405"}
-          widgetId={"1ipltvn96"}
-        />
-      </button>
+     
     </>
   );
 };
