@@ -1,5 +1,5 @@
 import { FaCheckCircle } from "react-icons/fa"
-
+import Link from "next/link";
 export default function WhyChooseMLC({ title, description, features ,iconsColor}) {
   return (
     <section className="py-16 bg-white">
@@ -10,6 +10,7 @@ export default function WhyChooseMLC({ title, description, features ,iconsColor}
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feat, idx) => (
+          <Link   href={`features/${feat?.url}`}>
             <div key={idx} className={`bg-${iconsColor}-50 p-6 rounded-lg`}>
              <div className="flex items-center space-x-4">
                <feat.icon className={`w-8 h-8 text-${iconsColor}-600 mb-4`} />
@@ -17,6 +18,7 @@ export default function WhyChooseMLC({ title, description, features ,iconsColor}
               </div>
               <p className="text-gray-900">{feat.desc}</p>
             </div>
+          </Link>
           ))}
         </div>
       </div>

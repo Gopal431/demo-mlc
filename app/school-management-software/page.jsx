@@ -20,8 +20,8 @@ function page() {
   const headerContent = {
     title: "School Management Software in India",
     highlight: "MyLeading Campus®",
-    description:
-      "This ERP is designed to simplify school operations, improve communication, and ensure smooth administration—all in one platform.",
+    clgImg:"/Assts/logo/girl.png",
+    description: "This ERP is designed to simplify school operations, improve communication, and ensure smooth administration—all in one platform.",
     imageSrc: "/Assts/hero.png",
     imageAlt: "MyLeading Campus Hero Image",
   };
@@ -30,31 +30,37 @@ function page() {
       title: "Digital Admissions",
       desc: "Collect forms, verify documents, and generate merit lists online.",
       icon: HiOutlineCalendarDateRange,
+        url: "",
     },
     {
       title: "Smart Fee Management",
       desc: "Collect fees via UPI, cards, net banking, with automatic receipts.",
-      icon:PiMoneyWavyThin
+      icon:PiMoneyWavyThin,
+       url: "fees-management-system",
     },
     {
       title: "Attendance Automation",
       desc: "Biometric, RFID, or mobile app-based attendance with instant parent alerts.",
-      icon: HiOutlineCalendarDateRange
+      icon: HiOutlineCalendarDateRange,
+      url: "biometric-attendance-management",
     },
     {
       title: "Exam & Report Cards",
       desc: "Generate marksheets and progress reports instantly.",
-      icon:LiaDigitalTachographSolid
+      icon:LiaDigitalTachographSolid,
+        url: "progress-report-card-management",
     },
     {
       title: "Parent App",
       desc: "Real-time updates on homework, notices, and child performance.",
-      icon:GrAppleAppStore
+      icon:GrAppleAppStore,
+        url: "",
     },
     {
       title: "Transport & GPS Tracking",
       desc: "Ensure student safety with live bus tracking.",
-      icon:MdEmojiTransportation
+      icon:MdEmojiTransportation,
+        url: "transport-gps-tracking",
     },
   ];
   const cardsData = [

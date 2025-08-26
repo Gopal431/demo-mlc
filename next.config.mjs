@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        domains: ["i.pravatar.cc", "img.freepik.com"],
+        domains: ["i.pravatar.cc", "img.freepik.com","images.unsplash.com"],
     },
     env: {
         NEXT_PUBLIC_BUILD_TIME: Date.now().toString(),

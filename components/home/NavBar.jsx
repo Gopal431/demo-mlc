@@ -250,27 +250,20 @@ const NavBar = () => {
             >
               Blogs
             </Link>
-            <Link
-              href="/school-management-software"
-              className={isActive("/school-management-software") + " block"}
-              onClick={() => setIsMobileMenuOpen(false)} 
-            >
-              School Management Software
-            </Link>
-            <Link
-              href="/college-management-software"
-              className={isActive("/college-management-software") + " block"}
-              onClick={() => setIsMobileMenuOpen(false)} 
-            >
-              College Management Software
-            </Link>
-            <Link
-              href="/school-erp"
-              className={isActive("/school-erp") + " block"}
-              onClick={() => setIsMobileMenuOpen(false)} 
-            >
-              School ERP
-            </Link>
+         
+              <Dropdown menu={{ items: servicesItems }} trigger={["hover"]}>
+                <span className="cursor-pointer flex items-center space-x-1 hover:text-[#743DFF]">
+                  <span
+                   className={isActive("/testimonials") + " block"}
+                  >
+                    Service
+                  </span>
+                  <DownOutlined className="text-xs" />
+                </span>
+              </Dropdown>
+          
+           
+           
             <Link
               href="/testimonials"
               className={isActive("/testimonials") + " block"}

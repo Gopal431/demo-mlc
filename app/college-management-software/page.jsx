@@ -16,11 +16,13 @@ import { PiMoneyWavyThin,PiExamLight } from "react-icons/pi";
 import { VscFileSubmodule } from "react-icons/vsc";
 import { MdOutlineLocalLibrary ,MdEmojiTransportation, MdOutlineCurrencyRupee} from "react-icons/md";
 import { HiOutlineDevicePhoneMobile } from "react-icons/hi2";
+// import CMGirlImage from "../../public/Assts/logo/clggirl.png";
 function page() {
 
   const headerContent = {
     title: "College Management Software in India",
     highlight: "MyLeading Campus®",
+    clgImg:"/Assts/logo/clggirls.png",
     description:
       "Running a college is more challenging than ever. With thousands of students, multiple courses, admissions, examinations, placements, and daily operations, manual processes are no longer enough. MyLeading Campus® provides an all-in-one ERP solution built for Indian colleges and universities.",
     imageSrc: "/Assts/hero.png",

@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 export default function Header({ headerData }) {
-  const { title, highlight, description, imageSrc, imageAlt } =
+  const { title, highlight,clgImg, description, imageSrc, imageAlt } =
     headerData || {};
 
   return (
@@ -23,7 +23,7 @@ export default function Header({ headerData }) {
         </div>
       <div className="flex justify-center lg:justify-end items-center">
           <Image
-          src={"/Assts/logo/girl.png"}
+          src={clgImg}
           alt={imageAlt || "Hero illustration"}
           width={240}
           height={180}

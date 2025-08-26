@@ -6,7 +6,7 @@ import { FaInstagram, FaSquareFacebook, FaArrowUp } from "react-icons/fa6";
 import Link from "next/link";
 import ContactModal from "../contactModal/ContactModal";
 import { Button } from "antd";
-// import TawkMessengerReactUmd from "@tawk.to/tawk-messenger-react";
+
 const Footer = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [openModal, setOpenModal] = useState(false);
@@ -176,7 +176,8 @@ const Footer = () => {
         />
       )}
 
-     
+      {/* Support Button */}
+   
     </>
   );
 };

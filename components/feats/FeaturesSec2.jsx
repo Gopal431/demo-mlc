@@ -17,116 +17,195 @@ import {
   FaBus,
   FaBuilding,
   FaVideo,
+  FaGraduationCap,
+  FaFingerprint,
+  FaMobileAlt,
+  FaRegFileAlt,
+  FaMoneyCheckAlt,
+  FaUserCheck,
+  FaCalendarAlt,
+  FaExchangeAlt,
+  FaCogs,
+  FaFileInvoice,
+  FaChartBar,
+  FaCalculator,
+  FaGasPump,
+  FaMoneyBillWave,
+  FaUser,
+  FaFileInvoiceDollar,
+  FaEnvelope,
 } from "react-icons/fa";
+import { CiSquareQuestion, CiVideoOn } from "react-icons/ci";
+import { PiBookmarkLight, PiRocketLaunchLight } from "react-icons/pi";
+import { SiMaterialdesign } from "react-icons/si";
 
 const FeaturesSec2 = () => {
-  const FeaturesItem = [
-    {
-      img: <FaRegCalendarCheck />,
-      title: "Attendance Management",
-      desc: "Track and manage student attendance effortlessly with advanced biometric and RFID systems, ensuring every entry and exit is accurately recorded. Automated alerts are instantly sent to parents and guardians for absences, late arrivals, or early departures, creating complete transparency and peace of mind. Teachers and administrators can generate daily, weekly, and monthly reports, analyze patterns, and identify irregularities in student attendance. Integration with timetables and school calendars makes attendance tracking streamlined, efficient, and error-free, reducing manual work while improving accountability across the institution.",
-      gradient: "from-blue-500 to-cyan-500",
-      bgColor: "bg-blue-50",
-    },
-    {
-      img: <FaBookOpen />,
-      title: "Gradebook Management",
-      desc: "Easily record, calculate, and manage grades for assignments, quizzes, tests, and projects in one centralized system. Teachers save time with automated calculations and reduced manual errors, while students and parents enjoy real-time access to academic results. Detailed progress reports help track performance trends, highlight strengths, and identify areas for improvement. The system also supports customizable grading templates, term-wise evaluations, and historical comparisons, giving a holistic view of academic growth throughout the school year.",
-      gradient: "from-emerald-500 to-teal-500",
-      bgColor: "bg-emerald-50",
-    },
-    {
-      img: <FaComments />,
-      title: "Communication Management",
-      desc: "Enhance communication by delivering instant notifications for important school updates such as announcements, parent-teacher meetings, upcoming events, and assignment deadlines. Parents stay actively informed about their child’s academic performance, attendance, and behavior, strengthening trust and engagement between schools and families. Two-way communication tools allow teachers to share feedback and reminders directly with parents, creating a collaborative environment that supports student success.",
-      gradient: "from-purple-500 to-indigo-500",
-      bgColor: "bg-purple-50",
-    },
-    {
-      img: <FaBell />,
-      title: "Automated Reminders",
-      desc: "Send timely, automated reminders for assignments, fee payments, school events, and examinations. Parents and students receive instant alerts via multiple channels, reducing the chances of missed deadlines and ensuring smooth academic and financial planning. By minimizing manual follow-ups, schools improve efficiency, reduce workload for staff, and create a more organized academic environment for everyone involved.",
-      gradient: "from-orange-500 to-red-500",
-      bgColor: "bg-orange-50",
-    },
-    {
-      img: <FaClock />,
-      title: "Timetable Management",
-      desc: "Easily plan and organize timetables for classes, exams, and extracurricular activities with a user-friendly interface. The system prevents scheduling conflicts, optimizes classroom resources, and balances teacher workloads effectively. Parents and students can access updated schedules in real-time, ensuring they are always prepared. Integration with attendance and academic modules makes timetable management more efficient and transparent for all stakeholders.",
-      gradient: "from-pink-500 to-rose-500",
-      bgColor: "bg-pink-50",
-    },
-    {
-      img: <FaChartLine />,
-      title: "Insightful Reports",
-      desc: "Generate comprehensive reports covering attendance, academic performance, fee payments, and overall student progress. Customizable report templates allow administrators and teachers to tailor insights according to institutional needs. Parents receive clear, easy-to-understand reports that showcase strengths and highlight areas for growth. These reports empower schools to make data-driven decisions, improving both student outcomes and overall school performance.",
-      gradient: "from-violet-500 to-purple-500",
-      bgColor: "bg-violet-50",
-    },
-    {
-      img: <FaHome />,
-      title: "Dashboard",
-      desc: "Access powerful dashboards that provide real-time analytics, SMS usage tracking, and quick overviews of key school metrics. Administrators gain valuable insights into attendance rates, academic trends, and financial summaries, helping them make faster, more informed decisions. Customizable widgets and visual reports simplify complex data, ensuring that important information is always at your fingertips.",
-      gradient: "from-blue-400 to-blue-600",
-      bgColor: "bg-blue-50",
-    },
-    {
-      img: <FaUserGraduate />,
-      title: "Student Management",
-      desc: "Manage the complete student lifecycle from admission to graduation. Add, edit, and update student profiles with ease, while bulk operations save time for larger institutions. The system supports detailed academic records, disciplinary history, and extracurricular achievements. Students benefit from personalized dashboards, while administrators and teachers enjoy seamless tracking of student progress and performance throughout their school journey.",
-      gradient: "from-green-400 to-green-600",
-      bgColor: "bg-green-50",
-    },
-    {
-      img: <FaDollarSign />,
-      title: "Financial Management",
-      desc: "Simplify financial operations with comprehensive fee management, account tracking, and multiple payment options including online gateways. Administrators can set up fee structures, monitor dues, and generate receipts automatically. Parents benefit from transparent, hassle-free payments, while schools ensure timely fee collection and accurate financial reporting. Advanced tools also support account reconciliation and expense management for smooth financial operations.",
-      gradient: "from-yellow-400 to-yellow-600",
-      bgColor: "bg-yellow-50",
-    },
-    {
-      img: <FaUserTie />,
-      title: "Staff Management",
-      desc: "Streamline staff operations with complete employee lifecycle management. Track attendance, manage leave requests, and monitor staff performance with ease. Employee dashboards provide a clear overview of schedules, attendance, and payroll information. Administrators can generate performance reviews and attendance summaries, ensuring fair evaluation and effective workforce management across the institution.",
-      gradient: "from-orange-400 to-orange-600",
-      bgColor: "bg-orange-50",
-    },
-    {
-      img: <FaBook />,
-      title: "Academic Management",
-      desc: "Organize and oversee the entire academic process, from curriculum planning to subject assignments and progress tracking. Teachers can efficiently manage lesson plans, track performance across subjects, and generate customizable progress reports. Parents gain visibility into their child’s academic journey, while administrators access institution-wide academic performance data to enhance teaching strategies and improve learning outcomes.",
-      gradient: "from-purple-400 to-purple-600",
-      bgColor: "bg-purple-50",
-    },
-    {
-      img: <FaClipboardList />,
-      title: "Admission & Enquiry",
-      desc: "Streamline the admission process with powerful enquiry management and lead-tracking features. Schools can capture prospective student data, monitor admission status, and manage applications seamlessly. Automated communication tools keep parents updated about admission timelines and requirements, reducing confusion. By digitizing enquiries and admissions, institutions improve efficiency while offering a smoother onboarding experience for students and families.",
-      gradient: "from-pink-400 to-pink-600",
-      bgColor: "bg-pink-50",
-    },
-    {
-      img: <FaBus />,
-      title: "Transport Management",
-      desc: "Ensure student safety and punctuality with a complete transport management system. Plan routes, track vehicles in real time, and coordinate schedules with ease. Parents receive timely updates on bus arrivals and departures, while administrators monitor vehicle usage and optimize routes to reduce costs. Integration with student attendance and timetable modules ensures smooth coordination between academic and transport schedules.",
-      gradient: "from-cyan-400 to-cyan-600",
-      bgColor: "bg-cyan-50",
-    },
-    {
-      img: <FaBuilding />,
-      title: "Hostel Management",
-      desc: "Simplify hostel operations with tools for room allocation, fee collection, and daily management. Schools can track occupancy, manage house systems, and oversee canteen and library services efficiently. Parents gain confidence knowing that hostel facilities are transparent and well-managed, while administrators enjoy real-time insights into hostel operations, improving accountability and student welfare.",
-      gradient: "from-gray-400 to-gray-600",
-      bgColor: "bg-gray-50",
-    },
-    {
-      img: <FaVideo />,
-      title: "Digital Learning",
-      desc: "Support modern education with online classes, digital content management, and interactive learning tools. Teachers can upload course materials, conduct virtual lessons, and track student participation seamlessly. Students access learning resources anytime, anywhere, while parents stay informed about progress in digital courses. Integration with assessments and gradebook modules ensures that digital learning is both structured and impactful.",
-      gradient: "from-indigo-400 to-indigo-600",
-      bgColor: "bg-indigo-50",
-    },
-  ];
+  // const FeaturesItem = [
+  //   {
+  //     img: <FaRegCalendarCheck />,
+  //     title: "Attendance Management",
+  //     desc: "Track and manage student attendance effortlessly with advanced biometric and RFID systems, ensuring every entry and exit is accurately recorded. Automated alerts are instantly sent to parents and guardians for absences, late arrivals, or early departures, creating complete transparency and peace of mind. Teachers and administrators can generate daily, weekly, and monthly reports, analyze patterns, and identify irregularities in student attendance. Integration with timetables and school calendars makes attendance tracking streamlined, efficient, and error-free, reducing manual work while improving accountability across the institution.",
+  //     gradient: "from-blue-500 to-cyan-500",
+  //     bgColor: "bg-blue-50",
+  //   },
+  //   {
+  //     img: <FaBookOpen />,
+  //     title: "Gradebook Management",
+  //     desc: "Easily record, calculate, and manage grades for assignments, quizzes, tests, and projects in one centralized system. Teachers save time with automated calculations and reduced manual errors, while students and parents enjoy real-time access to academic results. Detailed progress reports help track performance trends, highlight strengths, and identify areas for improvement. The system also supports customizable grading templates, term-wise evaluations, and historical comparisons, giving a holistic view of academic growth throughout the school year.",
+  //     gradient: "from-emerald-500 to-teal-500",
+  //     bgColor: "bg-emerald-50",
+  //   },
+  //   {
+  //     img: <FaComments />,
+  //     title: "Communication Management",
+  //     desc: "Enhance communication by delivering instant notifications for important school updates such as announcements, parent-teacher meetings, upcoming events, and assignment deadlines. Parents stay actively informed about their child’s academic performance, attendance, and behavior, strengthening trust and engagement between schools and families. Two-way communication tools allow teachers to share feedback and reminders directly with parents, creating a collaborative environment that supports student success.",
+  //     gradient: "from-purple-500 to-indigo-500",
+  //     bgColor: "bg-purple-50",
+  //   },
+  //   {
+  //     img: <FaBell />,
+  //     title: "Automated Reminders",
+  //     desc: "Send timely, automated reminders for assignments, fee payments, school events, and examinations. Parents and students receive instant alerts via multiple channels, reducing the chances of missed deadlines and ensuring smooth academic and financial planning. By minimizing manual follow-ups, schools improve efficiency, reduce workload for staff, and create a more organized academic environment for everyone involved.",
+  //     gradient: "from-orange-500 to-red-500",
+  //     bgColor: "bg-orange-50",
+  //   },
+  //   {
+  //     img: <FaClock />,
+  //     title: "Timetable Management",
+  //     desc: "Easily plan and organize timetables for classes, exams, and extracurricular activities with a user-friendly interface. The system prevents scheduling conflicts, optimizes classroom resources, and balances teacher workloads effectively. Parents and students can access updated schedules in real-time, ensuring they are always prepared. Integration with attendance and academic modules makes timetable management more efficient and transparent for all stakeholders.",
+  //     gradient: "from-pink-500 to-rose-500",
+  //     bgColor: "bg-pink-50",
+  //   },
+  //   {
+  //     img: <FaChartLine />,
+  //     title: "Insightful Reports",
+  //     desc: "Generate comprehensive reports covering attendance, academic performance, fee payments, and overall student progress. Customizable report templates allow administrators and teachers to tailor insights according to institutional needs. Parents receive clear, easy-to-understand reports that showcase strengths and highlight areas for growth. These reports empower schools to make data-driven decisions, improving both student outcomes and overall school performance.",
+  //     gradient: "from-violet-500 to-purple-500",
+  //     bgColor: "bg-violet-50",
+  //   },
+  //   {
+  //     img: <FaHome />,
+  //     title: "Dashboard",
+  //     desc: "Access powerful dashboards that provide real-time analytics, SMS usage tracking, and quick overviews of key school metrics. Administrators gain valuable insights into attendance rates, academic trends, and financial summaries, helping them make faster, more informed decisions. Customizable widgets and visual reports simplify complex data, ensuring that important information is always at your fingertips.",
+  //     gradient: "from-blue-400 to-blue-600",
+  //     bgColor: "bg-blue-50",
+  //   },
+  //   {
+  //     img: <FaUserGraduate />,
+  //     title: "Student Management",
+  //     desc: "Manage the complete student lifecycle from admission to graduation. Add, edit, and update student profiles with ease, while bulk operations save time for larger institutions. The system supports detailed academic records, disciplinary history, and extracurricular achievements. Students benefit from personalized dashboards, while administrators and teachers enjoy seamless tracking of student progress and performance throughout their school journey.",
+  //     gradient: "from-green-400 to-green-600",
+  //     bgColor: "bg-green-50",
+  //   },
+  //   {
+  //     img: <FaDollarSign />,
+  //     title: "Financial Management",
+  //     desc: "Simplify financial operations with comprehensive fee management, account tracking, and multiple payment options including online gateways. Administrators can set up fee structures, monitor dues, and generate receipts automatically. Parents benefit from transparent, hassle-free payments, while schools ensure timely fee collection and accurate financial reporting. Advanced tools also support account reconciliation and expense management for smooth financial operations.",
+  //     gradient: "from-yellow-400 to-yellow-600",
+  //     bgColor: "bg-yellow-50",
+  //   },
+  //   {
+  //     img: <FaUserTie />,
+  //     title: "Staff Management",
+  //     desc: "Streamline staff operations with complete employee lifecycle management. Track attendance, manage leave requests, and monitor staff performance with ease. Employee dashboards provide a clear overview of schedules, attendance, and payroll information. Administrators can generate performance reviews and attendance summaries, ensuring fair evaluation and effective workforce management across the institution.",
+  //     gradient: "from-orange-400 to-orange-600",
+  //     bgColor: "bg-orange-50",
+  //   },
+  //   {
+  //     img: <FaBook />,
+  //     title: "Academic Management",
+  //     desc: "Organize and oversee the entire academic process, from curriculum planning to subject assignments and progress tracking. Teachers can efficiently manage lesson plans, track performance across subjects, and generate customizable progress reports. Parents gain visibility into their child’s academic journey, while administrators access institution-wide academic performance data to enhance teaching strategies and improve learning outcomes.",
+  //     gradient: "from-purple-400 to-purple-600",
+  //     bgColor: "bg-purple-50",
+  //   },
+  //   {
+  //     img: <FaClipboardList />,
+  //     title: "Admission & Enquiry",
+  //     desc: "Streamline the admission process with powerful enquiry management and lead-tracking features. Schools can capture prospective student data, monitor admission status, and manage applications seamlessly. Automated communication tools keep parents updated about admission timelines and requirements, reducing confusion. By digitizing enquiries and admissions, institutions improve efficiency while offering a smoother onboarding experience for students and families.",
+  //     gradient: "from-pink-400 to-pink-600",
+  //     bgColor: "bg-pink-50",
+  //   },
+  //   {
+  //     img: <FaBus />,
+  //     title: "Transport Management",
+  //     desc: "Ensure student safety and punctuality with a complete transport management system. Plan routes, track vehicles in real time, and coordinate schedules with ease. Parents receive timely updates on bus arrivals and departures, while administrators monitor vehicle usage and optimize routes to reduce costs. Integration with student attendance and timetable modules ensures smooth coordination between academic and transport schedules.",
+  //     gradient: "from-cyan-400 to-cyan-600",
+  //     bgColor: "bg-cyan-50",
+  //   },
+  //   {
+  //     img: <FaBuilding />,
+  //     title: "Hostel Management",
+  //     desc: "Simplify hostel operations with tools for room allocation, fee collection, and daily management. Schools can track occupancy, manage house systems, and oversee canteen and library services efficiently. Parents gain confidence knowing that hostel facilities are transparent and well-managed, while administrators enjoy real-time insights into hostel operations, improving accountability and student welfare.",
+  //     gradient: "from-gray-400 to-gray-600",
+  //     bgColor: "bg-gray-50",
+  //   },
+  //   {
+  //     img: <FaVideo />,
+  //     title: "Digital Learning",
+  //     desc: "Support modern education with online classes, digital content management, and interactive learning tools. Teachers can upload course materials, conduct virtual lessons, and track student participation seamlessly. Students access learning resources anytime, anywhere, while parents stay informed about progress in digital courses. Integration with assessments and gradebook modules ensures that digital learning is both structured and impactful.",
+  //     gradient: "from-indigo-400 to-indigo-600",
+  //     bgColor: "bg-indigo-50",
+  //   },
+  // ];
+ const FeaturePages = [
+  {
+    title: "Fees Management System",
+    img: <FaBus />,
+    gradient: "from-cyan-400 to-cyan-600",
+    bgColor: "bg-cyan-50",
+    desc: "A smart and transparent fee collection system for schools and colleges that eliminates errors, reduces delays, and builds parent trust.",
+    url: "fees-management-system",
+  },
+  {
+    title: "Biometric Attendance Management",
+    img: <FaRegCalendarCheck />,
+    gradient: "from-blue-500 to-cyan-500",
+    bgColor: "bg-blue-50",
+    desc: "Automated attendance for students, teachers, and staff using biometrics for accuracy, security, and transparency.",
+    url: "biometric-attendance-management",
+  },
+  {
+    title: "Progress Report Card Management",
+    gradient: "from-pink-400 to-pink-600",
+    bgColor: "bg-pink-50",
+    img: <FaGraduationCap />,
+    desc: "Smarter, digital, and customizable report cards for schools to save teacher time and give parents clear insights.",
+    url: "progress-report-card-management",
+  },
+  {
+    title: "Timetable & Substitution Management",
+    img: <FaClock />,
+    gradient: "from-pink-500 to-rose-500",
+    bgColor: "bg-pink-50",
+    desc: "Digital timetable system for schools that prevents chaos, saves admin time, and ensures smooth learning even with absences.",
+    url: "timetable-substitution-management",
+  },
+  {
+    title: "Transport & GPS Tracking",
+    img: <FaBus />,
+    gradient: "from-cyan-400 to-cyan-600",
+    bgColor: "bg-cyan-50",
+    desc: "A safe, transparent, and efficient school transport system with live GPS tracking for parents and smart tools for admins.",
+    url: "transport-gps-tracking",
+  },
+  {
+    title: "Insightful Reports",
+    img: <FaChartLine />,
+    gradient: "from-violet-500 to-purple-500",
+    bgColor: "bg-violet-50",
+    desc: "Turn scattered school data into meaningful insights with automated reports for better decision-making.",
+    url: "insightful-reports",
+  },
+  {
+    title: "Employee & Payroll Management",
+    img: <FaUserTie />,
+    gradient: "from-orange-400 to-orange-600",
+    bgColor: "bg-orange-50",
+    desc: "A complete HR & Payroll solution for schools that automates staff management, attendance, payroll, and compliance.",
+    url: "employee-payroll-management",
+  },
+];
+
 
   return (
     <section className="py-24 px-6 md:px-12 bg-gradient-to-br from-slate-50 via-white to-blue-50 relative overflow-hidden">
@@ -146,11 +225,10 @@ const FeaturesSec2 = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 lg:gap-10">
-          {FeaturesItem.map((item, index) => (
+          {FeaturePages.map((item, index) => (
             <Link
-              href={`/feature-details/${encodeURIComponent(
-                JSON.stringify(item)
-              )}`}
+              key={index}
+              href={`features/${item?.url}`}
             >
               <div
                 key={index}

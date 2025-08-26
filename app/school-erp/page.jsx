@@ -23,6 +23,7 @@ function page() {
   const headerContent = {
     title: "School ERP Software in India",
     highlight: "MyLeading Campus®",
+     clgImg:"/Assts/logo/schoolGirls.png",
     description:
       "Managing a school is more than just teaching. From admissions to attendance, fees to exams, payroll to transport — administrators deal with hundreds of tasks daily. Doing this manually wastes time, creates errors, and frustrates parents. With MyLeading Campus®, schools can manage everything in one platform — simple, secure, and smart.",
     imageSrc: "/Assts/hero.png",
