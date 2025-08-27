@@ -25,10 +25,9 @@ export default function Header({ headerData }) {
           <Image
           src={clgImg}
           alt={imageAlt || "Hero illustration"}
-          width={240}
-          height={180}
+          width={300}
+          height={400}
           priority
-          className="h-auto w-auto"
         />
       </div>
       </div>

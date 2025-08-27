@@ -56,7 +56,6 @@ const NavBar = () => {
       label: (
         <Link
           href="/school-management-software"
-           onClick={() => setIsMobileMenuOpen(false)} 
           className={isActive("/school-management-software") + " block"}
         >
           School Management Software
@@ -68,7 +67,6 @@ const NavBar = () => {
       label: (
         <Link
           href="/college-management-software"
-           onClick={() => setIsMobileMenuOpen(false)} 
           className={isActive("/college-management-software") + " block"}
         >
           College Management Software
@@ -78,7 +76,7 @@ const NavBar = () => {
     {
       key: "3",
       label: (
-        <Link href="/school-erp" className={isActive("/school-erp") + " block"}  onClick={() => setIsMobileMenuOpen(false)} >
+        <Link href="/school-erp" className={isActive("/school-erp") + " block"}>
           School ERP
         </Link>
       ),

@@ -147,65 +147,72 @@ const FeaturesSec2 = () => {
   //     bgColor: "bg-indigo-50",
   //   },
   // ];
- const FeaturePages = [
-  {
-    title: "Fees Management System",
-    img: <FaBus />,
-    gradient: "from-cyan-400 to-cyan-600",
-    bgColor: "bg-cyan-50",
-    desc: "A smart and transparent fee collection system for schools and colleges that eliminates errors, reduces delays, and builds parent trust.",
-    url: "fees-management-system",
-  },
-  {
-    title: "Biometric Attendance Management",
-    img: <FaRegCalendarCheck />,
-    gradient: "from-blue-500 to-cyan-500",
-    bgColor: "bg-blue-50",
-    desc: "Automated attendance for students, teachers, and staff using biometrics for accuracy, security, and transparency.",
-    url: "biometric-attendance-management",
-  },
-  {
-    title: "Progress Report Card Management",
-    gradient: "from-pink-400 to-pink-600",
-    bgColor: "bg-pink-50",
-    img: <FaGraduationCap />,
-    desc: "Smarter, digital, and customizable report cards for schools to save teacher time and give parents clear insights.",
-    url: "progress-report-card-management",
-  },
-  {
-    title: "Timetable & Substitution Management",
-    img: <FaClock />,
-    gradient: "from-pink-500 to-rose-500",
-    bgColor: "bg-pink-50",
-    desc: "Digital timetable system for schools that prevents chaos, saves admin time, and ensures smooth learning even with absences.",
-    url: "timetable-substitution-management",
-  },
-  {
-    title: "Transport & GPS Tracking",
-    img: <FaBus />,
-    gradient: "from-cyan-400 to-cyan-600",
-    bgColor: "bg-cyan-50",
-    desc: "A safe, transparent, and efficient school transport system with live GPS tracking for parents and smart tools for admins.",
-    url: "transport-gps-tracking",
-  },
-  {
-    title: "Insightful Reports",
-    img: <FaChartLine />,
-    gradient: "from-violet-500 to-purple-500",
-    bgColor: "bg-violet-50",
-    desc: "Turn scattered school data into meaningful insights with automated reports for better decision-making.",
-    url: "insightful-reports",
-  },
-  {
-    title: "Employee & Payroll Management",
-    img: <FaUserTie />,
-    gradient: "from-orange-400 to-orange-600",
-    bgColor: "bg-orange-50",
-    desc: "A complete HR & Payroll solution for schools that automates staff management, attendance, payroll, and compliance.",
-    url: "employee-payroll-management",
-  },
-];
-
+  const FeaturePages = [
+    {
+      title: "Fees Management System",
+      img: <FaBus />,
+      gradient: "from-cyan-400 to-cyan-600",
+      bgColor: "bg-cyan-50",
+      desc: "A smart and transparent fee collection system for schools and colleges that eliminates errors, reduces delays, and builds parent trust.",
+      url: "fees-management-system",
+    },
+    {
+      title: "Biometric Attendance Management",
+      img: <FaRegCalendarCheck />,
+      gradient: "from-blue-500 to-cyan-500",
+      bgColor: "bg-blue-50",
+      desc: "Automated attendance for students, teachers, and staff using biometrics for accuracy, security, and transparency.",
+      url: "best-biometric-attendance-system-school-india",
+    },
+    {
+      title: "Progress Report Card Management",
+      gradient: "from-pink-400 to-pink-600",
+      bgColor: "bg-pink-50",
+      img: <FaGraduationCap />,
+      desc: "Smarter, digital, and customizable report cards for schools to save teacher time and give parents clear insights.",
+      url: "progress-report-card-management",
+    },
+    {
+      title: "Timetable & Substitution Management",
+      img: <FaClock />,
+      gradient: "from-pink-500 to-rose-500",
+      bgColor: "bg-pink-50",
+      desc: "Digital timetable system for schools that prevents chaos, saves admin time, and ensures smooth learning even with absences.",
+      url: "best-timetable-substitution-management-school-india",
+    },
+    {
+      title: "Transport & GPS Tracking",
+      img: <FaBus />,
+      gradient: "from-cyan-400 to-cyan-600",
+      bgColor: "bg-cyan-50",
+      desc: "A safe, transparent, and efficient school transport system with live GPS tracking for parents and smart tools for admins.",
+      url: "best-transport-gps-tracking-school-india",
+    },
+    {
+      title: "Insightful Reports",
+      img: <FaChartLine />,
+      gradient: "from-violet-500 to-purple-500",
+      bgColor: "bg-violet-50",
+      desc: "Turn scattered school data into meaningful insights with automated reports for better decision-making.",
+      url: "insightful-reports",
+    },
+    {
+      title: "Employee & Payroll Management",
+      img: <FaUserTie />,
+      gradient: "from-orange-400 to-orange-600",
+      bgColor: "bg-orange-50",
+      desc: "A complete HR & Payroll solution for schools that automates staff management, attendance, payroll, and compliance.",
+      url: "employee-payroll-management",
+    },
+    {
+      img: <FaBuilding />,
+      title: "Hostel Management",
+      desc: "Streamline hostel operations with room allocation, fee tracking, and real-time management for staff and parents.",
+      gradient: "from-gray-400 to-gray-600",
+      bgColor: "bg-gray-50",
+      url: "best-hostel-management-software-school-india",
+    },
+  ];
 
   return (
     <section className="py-24 px-6 md:px-12 bg-gradient-to-br from-slate-50 via-white to-blue-50 relative overflow-hidden">
@@ -226,10 +233,7 @@ const FeaturesSec2 = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 lg:gap-10">
           {FeaturePages.map((item, index) => (
-            <Link
-              key={index}
-              href={`features/${item?.url}`}
-            >
+            <Link key={index} href={`features/${item?.url}`}>
               <div
                 key={index}
                 className="group relative bg-white/80 backdrop-blur-sm border border-white/20 shadow-lg hover:shadow-2xl hover:-translate-y-3 transition-all duration-500 rounded-2xl p-8 flex flex-col text-left overflow-hidden"

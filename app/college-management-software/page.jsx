@@ -22,7 +22,7 @@ function page() {
   const headerContent = {
     title: "College Management Software in India",
     highlight: "MyLeading Campus®",
-    clgImg:"/Assts/logo/clggirls.png",
+    clgImg:"/Assts/clggirls.png",
     description:
       "Running a college is more challenging than ever. With thousands of students, multiple courses, admissions, examinations, placements, and daily operations, manual processes are no longer enough. MyLeading Campus® provides an all-in-one ERP solution built for Indian colleges and universities.",
     imageSrc: "/Assts/hero.png",

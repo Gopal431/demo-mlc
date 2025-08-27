@@ -1,83 +1,196 @@
-import { FaBus } from "react-icons/fa";
-import { PiBookmarkLight, PiRocketLaunchLight } from "react-icons/pi";
-import { CiSquareQuestion, CiVideoOn } from "react-icons/ci";
+import {
+  FaMoneyBillWave,
+  FaMobileAlt,
+  FaRegFileAlt,
+  FaCreditCard,
+  FaChartLine,
+} from "react-icons/fa";
+import { MdDashboardCustomize } from "react-icons/md";
+import { RiStackFill } from "react-icons/ri";
+import { SiMaterialdesign } from "react-icons/si";
+import { IoMdTimer } from "react-icons/io";
+
 export const feesManagementSystem = {
-  title: "Fees Management System",
-  img: <FaBus />,
-  gradient: "from-cyan-400 to-cyan-600",
-  bgColor: "bg-cyan-50",
-  desc: "A smart and transparent fee collection system for schools and colleges that eliminates errors, reduces delays, and builds parent trust.",
-  why: "Managing fees in schools and colleges is not just about collecting money. It’s about accuracy, transparency, and trust. Manual registers or outdated software often lead to errors, delays, and parent dissatisfaction.",
+  title: "Number #1 Online Fees Management System for Schools & Colleges",
+  title2:
+    "Benefits of Top Digital Fees Management Software for Schools, Parents & Students",
+  img: <FaMoneyBillWave />,
+  gradient: "from-green-500 to-emerald-500",
+  bgColor: "bg-green-50",
+  desc: "Collect, track, and manage all types of school payments in one place with our Online Fees Management System. Transparent, fast, and stress-free for schools, parents, and students.",
+  why: "Managing fees should not be a stressful job. Offline fee collection creates queues, errors, delays, and risks. Digital fee management ensures accuracy, transparency, and convenience for everyone.",
+
+  herosection: {
+    title: "Why Schools Need Online Fee Collection",
+    dec: "Manual fee collection creates long queues, errors in receipts, delays in tracking pending payments, and even risks in cash handling. Digital fee collection solves these issues by automating the entire process.",
+  },
+
   features: [
     {
-      fe: "Automatic fee collection and receipt generation",
-      icons: <PiRocketLaunchLight />,
+      fe: "Online Payments Anytime, Anywhere",
+      icons: FaMobileAlt,
       description:
-        "Streamline the process by automatically generating receipts and recording payments in real time.",
+        "Parents can pay anytime through mobile apps or web portals with UPI, cards, wallets, and net banking.",
     },
     {
-      fe: "Online payment gateway integration (UPI, net banking, cards, wallets)",
-      icons: <PiBookmarkLight />,
+      fe: "Instant Receipt Generation",
+      icons: FaRegFileAlt,
       description:
-        "Offer multiple secure payment options to parents and students for convenient transactions.",
+        "Receipts are auto-generated instantly and shared with both parents and school records in real time.",
     },
     {
-      fe: "SMS/WhatsApp reminders for due dates",
-      icons: <CiVideoOn />,
+      fe: "Centralized Fee Tracking",
+      icons: FaChartLine,
       description:
-        "Send automated reminders to reduce missed payments and ensure timely fee submission.",
+        "Manage tuition, transport, uniforms, books, hostel, canteen, and event fees in one dashboard.",
     },
     {
-      fe: "Customizable fee structures (CBSE, ICSE, IB, State Board)",
-      icons: <CiSquareQuestion />,
+      fe: "Automated Late Fee Calculation",
+      icons: IoMdTimer,
       description:
-        "Easily configure fee plans based on different boards, classes, and student categories.",
+        "Automatically apply late fees as per school policies, eliminating manual effort and errors.",
+    },
+    {
+      fe: "Secure & Transparent Payments",
+      icons: FaCreditCard,
+      description:
+        "All transactions are processed via secure gateways with full compliance and 100% transparency.",
     },
   ],
 
   caseStudy: {
-    school: "St. Joseph’s School, Kolkata",
+    school: "Greenfield International School, Mumbai",
     before:
-      "Manual fee records, long queues, missing receipts, and delayed updates.",
+      "Parents queued for hours, receipts often got misplaced, and fee tracking required multiple registers.",
     after: [
-      "80% parents paid online within 3 months",
-      "Reduced late fees by 60% with reminders",
-      "Zero missing receipt complaints",
+      "90% payments shifted online within 2 months",
+      "Receipts auto-generated with zero errors",
+      "Cash handling issues completely eliminated",
     ],
     quote:
-      "Parents are happy, and our accounts team finally has peace of mind.",
+      "Now parents pay with ease, and our accounts department finally works stress-free with accurate records.",
   },
-  benefits: [
-    {
-      title: "Increase sales",
-      description:
-        "Consectetur pariatur irure exercitation sit amet id consectetur consecteturmagna et Lorem labore qui velit.",
-    },
-    {
-      title: "Enterprise-ready",
-      description:
-        "Labore duis pariatur est exercitation laboris cupidatat amet cillum. Amet nisi ullamco.",
-    },
-    {
-      title: "Unlimited growth",
-      description:
-        "Elit deserunt nisi esse duis cupidatat proident sit minim mollit officia pariatur incididunt in tempor.",
-    },
-    {
-      title: "Recommended by experts",
-      description:
-        "Velit sit tempor pariatur quis pariatur incididunt culpa dolor voluptate officia incididunt velit dolore.",
-    },
-    {
-      title: "Modern platform",
-      description:
-        "Laboris elit consectetur sint nisi eu mollit proident sit magna velit adipisicing consequat amet reprehenderit.",
-    },
-    {
-      title: "Integrations",
-      description:
-        "Nostrud excepteur incididunt proident sit nulla ipsum sunt nostrud est esse adipisicing irure officia consectetur.",
-    },
-  ],
-  cta: ["Contact Us today", "Get a Free Demo"],
+
+benefits: [
+  {
+    title: "For Schools & Colleges",
+    description:
+      "Faster collection, better transparency, and zero errors in financial records.",
+  },
+  {
+    title: "For Parents",
+    description:
+      "Pay from anywhere with instant receipts, multiple payment options, and reminders.",
+  },
+  {
+    title: "For Students",
+    description:
+      "No disruptions in learning due to late or unrecorded payments.",
+  },
+  {
+    title: "Centralized Fee Tracking",
+    description:
+      "Track tuition, transport, hostel, uniform, and other fees in a single dashboard without juggling spreadsheets.",
+  },
+  {
+    title: "Reduced Administrative Burden",
+    description:
+      "Eliminate manual data entry and receipt management, allowing staff to focus on more impactful work.",
+  },
+  {
+    title: "Secure & Transparent Transactions",
+    description:
+      "All payments are routed through secure gateways with auto-generated receipts for complete transparency.",
+  },
+],
+
+
+  faqSectionData: {
+    title: "Got Questions? We've Got Answers!",
+    subtitle:
+      "Explore our frequently asked questions to learn more about our Fees Management System",
+    faqs: [
+      {
+        id: 1,
+        question: "Can parents pay through mobile phones?",
+        answer:
+          "Yes. Parents can pay via the school’s mobile app or web portal with full convenience.",
+      },
+      {
+        id: 2,
+        question: "What types of fees can be collected online?",
+        answer:
+          "All fees including tuition, transport, hostel, canteen, uniforms, books, and activity fees.",
+      },
+      {
+        id: 3,
+        question: "How are receipts handled?",
+        answer:
+          "Receipts are auto-generated instantly and shared with both parents and school records.",
+      },
+      {
+        id: 4,
+        question: "What about late fees?",
+        answer:
+          "The system automatically calculates and applies late fees as per school policies.",
+      },
+      {
+        id: 5,
+        question: "Is it safe to use?",
+        answer:
+          "Yes. All payments are processed through secure gateways with bank-level security.",
+      },
+    ],
+  },
+
+  FeaturesDataOfLaptop: {
+    title: "How Online Fee Management Works",
+    features: [
+      {
+        id: 1,
+        icon: SiMaterialdesign,
+        iconColour: "text-green-600",
+        title: "Seamless Integration",
+        description:
+          "Works smoothly with your school ERP, accounting, and reporting systems.",
+      },
+      {
+        id: 2,
+        icon: RiStackFill,
+        title: "Cloud-Based",
+        iconColour: "text-blue-500",
+        description: "All transactions stored securely in the cloud for easy access.",
+      },
+      {
+        id: 3,
+        icon: MdDashboardCustomize,
+        title: "Powerful Dashboard",
+        iconColour: "text-emerald-500",
+        description:
+          "Admins can view pending, collected, and upcoming payments in a single dashboard.",
+      },
+    ],
+  },
+
+  FeaturesDataMobile: {
+    title: "Key Features on Mobile",
+    features: [
+      {
+        id: 1,
+        icon: FaMobileAlt,
+        title: "Pay from Anywhere",
+        description:
+          "Parents can pay fees directly through mobile apps, ensuring maximum convenience.",
+      },
+      {
+        id: 2,
+        icon: IoMdTimer,
+        title: "Real-Time Updates",
+        description:
+          "Payment confirmations, receipts, and reminders are instantly available on mobile.",
+      },
+    ],
+  },
+
+  cta: ["Start Free Today", "Book a Demo Now", "Request Your Free Trial"],
 };

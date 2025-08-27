@@ -42,7 +42,7 @@ function page() {
       title: "Attendance Automation",
       desc: "Biometric, RFID, or mobile app-based attendance with instant parent alerts.",
       icon: HiOutlineCalendarDateRange,
-      url: "biometric-attendance-management",
+      url: "best-biometric-attendance-system-school-india",
     },
     {
       title: "Exam & Report Cards",
@@ -60,7 +60,7 @@ function page() {
       title: "Transport & GPS Tracking",
       desc: "Ensure student safety with live bus tracking.",
       icon:MdEmojiTransportation,
-        url: "transport-gps-tracking",
+        url: "best-transport-gps-tracking-school-india",
     },
   ];
   const cardsData = [

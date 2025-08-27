@@ -10,7 +10,7 @@ export default function WhyChooseMLC({ title, description, features ,iconsColor}
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feat, idx) => (
-          <Link   href={`features/${feat?.url}`}>
+          <Link key={idx}  href={`features/${feat?.url}`}>
             <div key={idx} className={`bg-${iconsColor}-50 p-6 rounded-lg`}>
              <div className="flex items-center space-x-4">
                <feat.icon className={`w-8 h-8 text-${iconsColor}-600 mb-4`} />
