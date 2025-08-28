@@ -173,14 +173,14 @@ benefits: [
   },
 
   FeaturesDataMobile: {
-    title: "Key Features on Mobile",
+    title: "Fee Tracking Made Easy ",
     features: [
       {
         id: 1,
         icon: FaMobileAlt,
         title: "Pay from Anywhere",
         description:
-          "Parents can pay fees directly through mobile apps, ensuring maximum convenience.",
+          "School Fee, Transport Fees, Uniform Fees, Books Fee, Hostel, Canteen and Other Fees",
       },
       {
         id: 2,

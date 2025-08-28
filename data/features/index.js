@@ -11,10 +11,10 @@ import { transportGpsTracking } from "./best-transport-gps-tracking-school-india
 export default {
    "attendance-management":attendanceManagement,
    "best-biometric-attendance-system-school-india":biometricAttendanceManagement,
-   // "employee-payroll-management":employeePayrollManagement,
+   "employee-payroll-management":employeePayrollManagement,
    "fees-management-system":feesManagementSystem,
-   // "insightful-reports":insightfulReports,
-   // "progress-report-card-management":progressReportCardManagement,
+   "insightful-reports":insightfulReports,
+   "progress-report-card-management":progressReportCardManagement,
    "best-timetable-substitution-management-school-india":timetableSubstitutionManagement,
    "best-transport-gps-tracking-school-india":transportGpsTracking,
    "best-hostel-management-software-school-india":hostelManagement
