@@ -44,13 +44,13 @@ function page() {
       title: "Smart Fee Collection & Reports",
       icon: PiMoneyWavyThin,
       desc: "Collect fees digitally with automated receipts and analytics.",
-       url: "fees-management-system",
+       url: "best-fees-management-system-india",
     },
     {
       title: "HR & Payroll Management",
       icon: MdOutlineCurrencyRupee,
       desc: "Track staff attendance, salary, PF, and performance reports.",
-       url: "employee-payroll-management",
+       url: "best-employee-payroll-management-india",
     },
     {
       title: "Library & Inventory Tracking",
@@ -68,13 +68,13 @@ function page() {
       title: "Homework & Assignment Uploads",
       icon: CgAssign,
       desc: "Teachers can upload and share homework digitally.",
-      url: "progress-report-card-management",
+      url: "best-progress-report-card-management-india",
     },
     {
       title: "Marks & Exam Result Management",
       icon: PiExamLight,
       desc: "Generate marksheets, report cards, and progress reports instantly.",
-       url: "progress-report-card-management",
+       url: "best-progress-report-card-management-india",
     },
     {
       title: "Dedicated Mobile Apps",

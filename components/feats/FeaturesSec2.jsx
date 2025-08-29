@@ -156,7 +156,7 @@ const FeaturesSec2 = () => {
       gradient: "from-cyan-400 to-cyan-600",
       bgColor: "bg-cyan-50",
       desc: "A smart and transparent fee collection system for schools and colleges that eliminates errors, reduces delays, and builds parent trust.",
-      url: "fees-management-system",
+      url: "best-fees-management-system-india",
     },
     {
       title: "Biometric Attendance Management",
@@ -172,7 +172,7 @@ const FeaturesSec2 = () => {
       bgColor: "bg-pink-50",
       img: <FaGraduationCap />,
       desc: "Smarter, digital, and customizable report cards for schools to save teacher time and give parents clear insights.",
-      url: "progress-report-card-management",
+      url: "best-progress-report-card-management-india",
     },
     {
       title: "Timetable & Substitution Management",
@@ -196,7 +196,7 @@ const FeaturesSec2 = () => {
       gradient: "from-violet-500 to-purple-500",
       bgColor: "bg-violet-50",
       desc: "Turn scattered school data into meaningful insights with automated reports for better decision-making.",
-      url: "insightful-reports",
+      url: "best-insightful-reports-india",
     },
     {
       title: "Employee & Payroll Management",
@@ -204,7 +204,7 @@ const FeaturesSec2 = () => {
       gradient: "from-orange-400 to-orange-600",
       bgColor: "bg-orange-50",
       desc: "A complete HR & Payroll solution for schools that automates staff management, attendance, payroll, and compliance.",
-      url: "employee-payroll-management",
+      url: "best-employee-payroll-management-india",
     },
     {
       img: <FaBuilding />,
@@ -257,14 +257,14 @@ const FeaturesSec2 = () => {
   ];
 
   return (
-    <section className="py-24 px-6 md:px-12 bg-gradient-to-br from-slate-50 via-white to-blue-50 relative overflow-hidden">
+    <section className="md:py-24 py-10 px-6 md:px-12 bg-gradient-to-br from-slate-50 via-white to-blue-50 relative overflow-hidden">
       <div className="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))] -z-10"></div>
       <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full blur-3xl opacity-30 -z-10"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-emerald-100 to-cyan-100 rounded-full blur-3xl opacity-30 -z-10"></div>
 
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-slate-800 via-slate-700 to-slate-800 bg-clip-text text-transparent leading-tight">
+        <div className="md:text-center text-left md:mb-20 mb-10">
+          <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-slate-800 via-slate-700 to-slate-800 bg-clip-text text-transparent leading-tight">
             Powerful Features for
             <br />
             <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">

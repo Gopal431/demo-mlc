@@ -14,11 +14,11 @@ export default function Section10Home({ sectionData }) {
     <section className="bg-[#F2F5FF] py-10">
       <div className="container mx-auto px-4">
         {/* Section Heading */}
-        <div className="text-center mb-12">
+        <div className="text-left md:text-center mb-12">
           <h2 className="font-[Helvetica] font-bold text-black text-[24px] sm:text-[40px] mb-2 capitalize">
             {title}
           </h2>
-          <h3 className="text-[18px] sm:text-3xl text-black font-medium text-center w-[80%] mx-auto">
+          <h3 className="text-[18px] sm:text-3xl text-black font-medium md:text-center text-left w-[80%] mx-auto">
             {subtitle}
           </h3>
         </div>
@@ -39,7 +39,7 @@ export default function Section10Home({ sectionData }) {
                     aria-expanded={activeIndex === index}
                     onClick={() => toggleAccordion(index)}
                   >
-                    <span className="text-[14px] md:text-[20px] flex font-semibold text-black">
+                    <span className="text-[14px] md:text-center text-left md:text-[20px] flex font-semibold text-black">
                       <span
                         className="mr-3 hidden md:block md:text-2xl font-bold text-gray-400"
                         style={{ verticalAlign: "top" }}

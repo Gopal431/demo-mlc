@@ -37,7 +37,7 @@ function page() {
       title: "Smart Fee Management",
       desc: "Collect fees via UPI, cards, net banking, with automatic receipts.",
       icon: PiMoneyWavyThin,
-      url: "fees-management-system",
+      url: "best-fees-management-system-india",
     },
     {
       title: "Attendance Automation",
@@ -49,7 +49,7 @@ function page() {
       title: "Exam & Report Cards",
       desc: "Generate marksheets and progress reports instantly.",
       icon: LiaDigitalTachographSolid,
-      url: "progress-report-card-management",
+      url: "best-progress-report-card-management-india",
     },
     {
       title: "Parent App",

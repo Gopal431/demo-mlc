@@ -38,9 +38,9 @@ export default async function page({ searchParams }) {
     const totalPages = Math.ceil(totalPostsCount / POSTS_PER_PAGE);
 
     return (
-        <section className="my-10 pt-20 bg-gray-50">
+        <section className="my-10 md:pt-20 bg-gray-50">
             <div className="container mx-auto px-4 text-[#141414]">
-                <section className="h-50 flex justify-center items-center mb-4 bg-gradient-to-t from-[#622BFF] to-[#16B2D0] rounded-lg p-6">
+                <section className="md:h-50 h-20 flex justify-center items-center mb-4 bg-gradient-to-t from-[#622BFF] to-[#16B2D0] rounded-lg p-6">
                     <h2 className="text-3xl font-bold text-center text-white">Latest Blogs</h2>
                 </section>
 

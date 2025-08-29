@@ -17,8 +17,8 @@ const Section12Home = () => {
     <section className='pb-10'>
       <ContactModal openModal={openModal} setOpenModal={setOpenModal} />
       <div className="container">
-        <div className="getInTouch bg-gradient-to-r to-[#EFECFF] from-[#FFE8EE] via-[#E4F8FF] py-8 px-4 md:px-7 rounded-[20px] shadow-md">
-          <h3 className='font-[Helvetica] font-bold text-[20px] text-[#141414] md:text-[34px]  text-center w-[80%] block m-auto'>
+        <div className=" md:text-center text-left bg-gradient-to-r to-[#EFECFF] from-[#FFE8EE] via-[#E4F8FF] py-8 px-4 md:px-7 rounded-[20px] shadow-md">
+          <h3 className='font-[Helvetica] font-bold text-[20px] text-[#141414] md:text-[34px]  md:text-center text-left w-[80%] block m-auto'>
             Get in Touch & Let's Transform Your School Together!
           </h3>
           <p className='text-center mt-2 text-[16px] md:text-[20px] font-normal text-[#141414] w-[100%] md:w-[73%] block m-auto'>

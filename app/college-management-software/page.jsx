@@ -32,13 +32,13 @@ function page() {
 
   const featuresData = [
     { title: "Digital Admissions",   url: "best-features-online-admission-management",  icon: HiOutlineCalendarDateRange, desc: "Manage applications, entrance tests, and seat allotment online." },
-    { title: "Course & Curriculum Management", url: "progress-report-card-management", icon: GiTennisCourt, desc: "Handle multiple programs, subjects, and batches with ease." },
-    { title: "Fee & Finance Automation", url: "fees-management-system", icon:PiMoneyWavyThin, desc: "Online fee collection with instant receipts and real-time tracking." },
-    { title: "Exams & Results",   url: "progress-report-card-management", icon:PiExamLight, desc: "Generate hall tickets, automate grading, publish results online." },
-    { title: "Placement Module",   url: "progress-report-card-management", icon:VscFileSubmodule, desc: "Track placement drives, company visits, and student records." },
+    { title: "Course & Curriculum Management", url: "best-progress-report-card-management-india", icon: GiTennisCourt, desc: "Handle multiple programs, subjects, and batches with ease." },
+    { title: "Fee & Finance Automation", url: "best-fees-management-system-india", icon:PiMoneyWavyThin, desc: "Online fee collection with instant receipts and real-time tracking." },
+    { title: "Exams & Results",   url: "best-progress-report-card-management-india", icon:PiExamLight, desc: "Generate hall tickets, automate grading, publish results online." },
+    { title: "Placement Module",   url: "best-progress-report-card-management-india", icon:VscFileSubmodule, desc: "Track placement drives, company visits, and student records." },
     { title: "Library Management",   url: "best-features-library-inventory-tracking", icon:MdOutlineLocalLibrary, desc: "Issue, renew, and track books digitally." },
     { title: "Hostel & Transport",    url: "best-transport-gps-tracking-school-india", icon:MdEmojiTransportation, desc: "Manage room allotments, mess, and bus routes with GPS tracking." },
-    { title: "HR & Payroll",   url: "employee-payroll-management", icon:MdOutlineCurrencyRupee, desc: "Staff attendance, salary, PF, and performance reports." },
+    { title: "HR & Payroll",   url: "best-employee-payroll-management-india", icon:MdOutlineCurrencyRupee, desc: "Staff attendance, salary, PF, and performance reports." },
     { title: "Mobile Apps for Students & Faculty",   url: "best-features-dedicated-mobile-apps", icon:HiOutlineDevicePhoneMobile, desc: "Access everything on the go." },
   ];
 

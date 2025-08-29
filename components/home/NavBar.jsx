@@ -91,14 +91,7 @@ const NavBar = () => {
         </Link>
       ),
     },
-    //  {
-    //   key: "2",
-    //   label: (
-    //     <Link href="/contact-us" className={isActive("/clients") + " block"}>
-    //       Contact Us
-    //     </Link>
-    //   ),
-    // },
+
     {
       key: "3",
       label: (
@@ -183,32 +176,28 @@ const NavBar = () => {
                 </span>
               </Dropdown>
             </li>
-            <li>
-              <Link href="/contact" className={isActive("/clients") + " block"}>
-          Contact Us
-        </Link>
-            </li>
+
             <li>
               <Link href="/pricing" className={isActive("/pricing")}>
                 Pricing
               </Link>
             </li>
             <li>
-              <Dropdown menu={{ items: aboutUs }} trigger={["hover"]}>
-                <span className="cursor-pointer flex items-center space-x-1 hover:text-[#743DFF]">
-                  <span
-                    className={
-                      pathname === "/clients" || pathname === "/testimonials"
-                        ? "text-[#743DFF] underline underline-offset-4"
-                        : "text-black"
-                    }
-                  >
-                    About Us
-                  </span>
-                  <DownOutlined className="text-xs" />
-                </span>
-              </Dropdown>
+              <Link href="/blog-listing" className={isActive("/pricing")}>
+                Blogs
+              </Link>
             </li>
+              <li>
+              <Link href="/contact" className={isActive("/clients") + " block"}>
+                Contact
+              </Link>
+            </li>
+            <li>
+              <Link href="/aboutus" className={isActive("/pricing")}>
+                About Us
+              </Link>
+            </li>
+          
           </ul>
 
           {/* CTA Button (Desktop only) */}
@@ -247,57 +236,77 @@ const NavBar = () => {
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
           <div className="xl:hidden bg-white px-6 pt-4 pb-6 space-y-4 text-sm font-medium shadow-md">
-            <Link href="/" className={isActive("/") + " block"} onClick={() => setIsMobileMenuOpen(false)} >
+            <Link
+              href="/"
+              className={isActive("/") + " block"}
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
               Home
             </Link>
-            <Link href="/features" className={isActive("/features") + " block"} onClick={() => setIsMobileMenuOpen(false)} >
+            <Link
+              href="/features"
+              className={isActive("/features") + " block"}
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
               Features
             </Link>
-            <Link href="/clients" className={isActive("/clients") + " block"} onClick={() => setIsMobileMenuOpen(false)} >
+            <Link
+              href="/clients"
+              className={isActive("/clients") + " block"}
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
               Clients
             </Link>
             <Link
               href="/blog-listing"
               className={isActive("/testimonials") + " block"}
-              onClick={() => setIsMobileMenuOpen(false)} 
+              onClick={() => setIsMobileMenuOpen(false)}
             >
               Blogs
             </Link>
-         
-              <Dropdown menu={{ items: servicesItems }} trigger={["hover"]}>
-                <span className="cursor-pointer flex items-center space-x-1 hover:text-[#743DFF]">
-                  <span
-                   className={isActive("/testimonials") + " block"}
-                  >
-                    Service
-                  </span>
-                  <DownOutlined className="text-xs" />
+
+            <Dropdown menu={{ items: servicesItems }} trigger={["hover"]}>
+              <span className="cursor-pointer flex items-center space-x-1 hover:text-[#743DFF]">
+                <span className={isActive("/testimonials") + " block"}>
+                  Service
                 </span>
-              </Dropdown>
-          
-           
-           
+                <DownOutlined className="text-xs" />
+              </span>
+            </Dropdown>
+
             <Link
               href="/testimonials"
               className={isActive("/testimonials") + " block"}
-              onClick={() => setIsMobileMenuOpen(false)} 
+              onClick={() => setIsMobileMenuOpen(false)}
             >
               Testimonials
             </Link>
-            <Link href="/pricing" className={isActive("/pricing") + " block"} onClick={() => setIsMobileMenuOpen(false)} >
+            <Link
+              href="/pricing"
+              className={isActive("/pricing") + " block"}
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
               Pricing
             </Link>
-             <Link href="/contact" className={isActive("/pricing") + " block"} onClick={() => setIsMobileMenuOpen(false)} >
+            <Link
+              href="/contact"
+              className={isActive("/pricing") + " block"}
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
               Contact
             </Link>
-            <Link href="/aboutus" className={isActive("/aboutus") + " block"} onClick={() => setIsMobileMenuOpen(false)} >
+            <Link
+              href="/aboutus"
+              className={isActive("/aboutus") + " block"}
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
               About Us
             </Link>
             <a
               target="_blank"
               href="https://www.school.myleadingcampus.com/?view=signup"
               className="block !text-white w-full text-center px-6 py-2 bg-gradient-to-r from-[#622BFF] to-[#16B2D0]  font-semibold text-sm rounded-full shadow-sm hover:opacity-90 transition"
-              onClick={() => setIsMobileMenuOpen(false)} 
+              onClick={() => setIsMobileMenuOpen(false)}
             >
               GET STARTED FOR FREE
             </a>

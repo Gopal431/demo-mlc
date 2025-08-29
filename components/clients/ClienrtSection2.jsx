@@ -81,7 +81,7 @@ const ClienrtSection2 = ({ lineColor, dotColor, lineWidth }) => {
                 <h2 className='font-[Helvetica] font-bold text-[20px] sm:text-[40px] leading-[21px] md:leading-[46px] capitalize text-center text-[#000] bg-gradient-to-r from-[#633EFF] via-[#FF335E] to-[#00ACCE] bg-clip-text text-transparent w-[68%] mx-auto mb-6' data-aos="zoom-in-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="400" style={{ width: '100%' }}>
                     Trusted by several Schools & Colleges
                 </h2>
-                <p className='text-[16px] sm:text-[20px] w-full md:w-[58%] md:leading-[26px] text-[#615f5f] block m-auto mb-8 font-normal text-center mt-[2.5rem]' data-aos="zoom-in-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="400">
+                <p className='text-[16px] sm:text-[20px] w-full md:w-[58%] md:leading-[26px] text-[#615f5f] block m-auto mb-8 font-normal md:text-center text-left mt-[2.5rem]' data-aos="zoom-in-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="400">
                     Trusted by over 50+ Schools 50,000+ Students and 1000+ teachers to Manage their classes, Monitor & Manage their Schools operations.
                 </p>
                 {/* <Slider {...settings}>

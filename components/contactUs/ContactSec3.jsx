@@ -43,14 +43,14 @@ const ContectSec3 = ({ lineColor, dotColor, lineWidth }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Contact Form */}
           <div className="col-span-1 order-1 md:order-1">
-            <h2 className="md:ml-5 ml-0 font-[Helvetica] font-bold text-[20px] sm:text-[36px] leading-[21px] md:leading-[46px] text-left w-[100%] bg-gradient-to-r from-[#3b566e] to-[#00ACCE] bg-clip-text text-transparent">
+            <h3 className="md:ml-5 ml-5 font-[Helvetica] font-bold text-[20px] sm:text-[36px] leading-[21px] md:leading-[46px] text-left w-[100%] bg-gradient-to-r from-[#3b566e] to-[#00ACCE] bg-clip-text text-transparent">
               Get in touch
-            </h2>
+            </h3>
             <ContactForm />
           </div>
 
           {/* Map */}
-          <div className="col-span-1 order-2 md:order-2">
+         <div className="hidden lg:block col-span-1 order-2">
             <div>
               <iframe
                 src={iframeUrl}

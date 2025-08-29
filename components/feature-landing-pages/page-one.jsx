@@ -27,16 +27,16 @@ function PageOne({ parsedFeature }) {
           <section className="">
             <div className="container max-w-xl p-6 mx-auto space-y-12 lg:px-8 lg:max-w-7xl">
               <div className="border-b border-gray-900 pb-10">
-                <h1 className="text-3xl font-bold text-center sm:text-4xl text-gray-600">
+                <h1 className="text-3xl font-bold md:text-center text-left sm:text-4xl text-gray-600">
                   {parsedFeature?.title}
                 </h1>
-                <h2 className="max-w-3xl mx-auto mt-5 text-xl text-center ">
+                <h2 className="max-w-3xl mx-auto mt-5 text-xl md:text-center text-left">
                   {parsedFeature?.why}
                 </h2>
               </div>
               <div className="flex flex-col md:flex-row justify-between items-center gap-6">
                 {/* Left Content */}
-                <div className="text-center md:text-left w-full md:w-1/2">
+                <div className="text-left w-full md:w-1/2">
                   <h1 className="text-xl sm:text-3xl font-bold text-gray-600">
                     {parsedFeature?.herosection?.title}
                   </h1>
@@ -46,7 +46,7 @@ function PageOne({ parsedFeature }) {
                 </div>
 
                 {/* Right Form */}
-           <section className="w-full md:w-1/2 px-4 md:px-0">
+                   <section className="w-full md:w-1/2 px-4 md:px-0">
   <div className="mx-auto max-w-6xl py-6 md:py-10">
     <div className="rounded-2xl border border-gray-200 bg-gray-100 p-4 sm:p-6 md:p-8 flex flex-col gap-4">
       {/* Top row */}
@@ -95,7 +95,6 @@ function PageOne({ parsedFeature }) {
     </div>
   </div>
 </section>
-
               </div>
 
               <div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
@@ -108,7 +107,7 @@ function PageOne({ parsedFeature }) {
                           key={index}
                           className="flex flex-col bg-white shadow-md md:shadow-none rounded-lg p-4 mb-4"
                         >
-                          <div className="flex items-center mb-2">
+                          <div className="flex md:items-center text-left mb-2">
                             <div className="flex-shrink-0 mr-3">
                               <div className="flex items-center justify-center w-12 h-12 rounded-md bg-blue-50">
                                 <Icon className="w-6 h-6 text-blue-600" />
@@ -141,8 +140,8 @@ function PageOne({ parsedFeature }) {
           <section className="bg-white">
             <div className="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8">
               <div className="container mx-auto px-6 p-6 bg-white">
-                <div className="mb-16 text-center border-b border-gray-900 pb-10">
-                  <h2 className="mt-2 text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-gray-900">
+                <div className="mb-16 md:text-center text-left border-b border-gray-900 pb-10">
+                  <h2 className="mt-2 text-2xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-gray-900">
                     {parsedFeature?.title2}
                   </h2>
                 </div>

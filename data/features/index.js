@@ -1,10 +1,10 @@
 import { attendanceManagement } from "./attendance-management";
 import { biometricAttendanceManagement } from "./best-biometric-attendance-system-school-india";
-import { employeePayrollManagement } from "./employee-payroll-management";
-import { feesManagementSystem } from "./fees-management-system";
+import { employeePayrollManagement } from "./best-employee-payroll-management-india";
+import { feesManagementSystem } from "./best-fees-management-system-india";
 import { hostelManagement } from "./best-hostel-management-software-school-india";
-import { insightfulReports } from "./insightful-reports";
-import { progressReportCardManagement } from "./progress Report-card-management";
+import { insightfulReports } from "./best-insightful-reports-india";
+import { progressReportCardManagement } from "./best-progress-report-card-management-india";
 import { timetableSubstitutionManagement } from "./best-timetable-substitution-management-school-india";
 import { transportGpsTracking } from "./best-transport-gps-tracking-school-india";
 import { onlineClassesManagement } from "./best-features-online-classes";
@@ -15,10 +15,10 @@ import { libraryManagement } from "./best-features-library-inventory-tracking";
 export default {
    "attendance-management":attendanceManagement,
    "best-biometric-attendance-system-school-india":biometricAttendanceManagement,
-   "employee-payroll-management":employeePayrollManagement,
-   "fees-management-system":feesManagementSystem,
-   "insightful-reports":insightfulReports,
-   "progress-report-card-management":progressReportCardManagement,
+   "best-employee-payroll-management-india":employeePayrollManagement,
+   "best-fees-management-system-india":feesManagementSystem,
+   "best-insightful-reports-india":insightfulReports,
+   "best-progress-report-card-management-india":progressReportCardManagement,
    "best-timetable-substitution-management-school-india":timetableSubstitutionManagement,
    "best-transport-gps-tracking-school-india":transportGpsTracking,
    "best-hostel-management-software-school-india":hostelManagement,
