@@ -165,6 +165,7 @@ export const employeePayrollManagement ={
 
   FeaturesDataMobile: {
     title: "Payroll Features on Mobile",
+     imgUrl:"/image/School-ERP.png",
     features: [
       {
         id: 1,

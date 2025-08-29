@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import {   FaChalkboardTeacher } from "react-icons/fa";
 import {
   FaRegCalendarCheck,
   FaBookOpen,
@@ -38,6 +39,7 @@ import {
 import { CiSquareQuestion, CiVideoOn } from "react-icons/ci";
 import { PiBookmarkLight, PiRocketLaunchLight } from "react-icons/pi";
 import { SiMaterialdesign } from "react-icons/si";
+import { FaBuildingCircleArrowRight } from "react-icons/fa6";
 
 const FeaturesSec2 = () => {
   // const FeaturesItem = [
@@ -212,6 +214,46 @@ const FeaturesSec2 = () => {
       bgColor: "bg-gray-50",
       url: "best-hostel-management-software-school-india",
     },
+     {
+      img: <FaBuildingCircleArrowRight />,
+      title: "Communication Management",
+      desc: "Easy School Communication with SMS, WhatsApp ,Email & AppNotification Integration.",
+      gradient: "from-teal-400 to-pink-600",
+      bgColor: "bg-gray-50",
+      url: "best-features/communication-management-school-india",
+    },
+     {
+    img: <FaMobileAlt />,
+    title: "Dedicated Mobile Apps",
+    desc: "Provide parents, teachers & students with dedicated mobile apps for smooth school operations.",
+    gradient: "from-blue-400 to-cyan-600",
+    bgColor: "bg-gray-50",
+    url: "best-features-dedicated-mobile-apps",
+  },
+  {
+    img: <FaBookOpen />,
+    title: "Library & Inventory Tracking",
+    desc: "Easily manage library books, stationery, and other inventory with automated tracking.",
+    gradient: "from-green-400 to-teal-600",
+    bgColor: "bg-gray-50",
+    url: "best-features-library-inventory-tracking",
+  },
+  {
+    img: <FaUserGraduate />,
+    title: "Online Admission Management",
+    desc: "Simplify student admissions online with forms, approvals, and automated notifications.",
+    gradient: "from-purple-400 to-pink-600",
+    bgColor: "bg-gray-50",
+    url: "best-features-online-admission-management",
+  },
+  {
+    img: <FaChalkboardTeacher />,
+    title: "Online Classes",
+    desc: "Conduct live and recorded online classes seamlessly for students anywhere.",
+    gradient: "from-yellow-400 to-orange-500",
+    bgColor: "bg-gray-50",
+    url: "best-features-online-classes",
+  },
   ];
 
   return (

@@ -22,7 +22,7 @@ function page() {
   const headerContent = {
     title: "College Management Software in India",
     highlight: "MyLeading Campus®",
-    clgImg:"/Assts/clggirls.png",
+    clgImg:"/image/college-management-software-girl.png",
     description:
       "Running a college is more challenging than ever. With thousands of students, multiple courses, admissions, examinations, placements, and daily operations, manual processes are no longer enough. MyLeading Campus® provides an all-in-one ERP solution built for Indian colleges and universities.",
     imageSrc: "/Assts/hero.png",
@@ -31,15 +31,15 @@ function page() {
 
 
   const featuresData = [
-    { title: "Digital Admissions",  icon: HiOutlineCalendarDateRange, desc: "Manage applications, entrance tests, and seat allotment online." },
-    { title: "Course & Curriculum Management",icon: GiTennisCourt, desc: "Handle multiple programs, subjects, and batches with ease." },
-    { title: "Fee & Finance Automation",icon:PiMoneyWavyThin, desc: "Online fee collection with instant receipts and real-time tracking." },
-    { title: "Exams & Results",icon:PiExamLight, desc: "Generate hall tickets, automate grading, publish results online." },
-    { title: "Placement Module",icon:VscFileSubmodule, desc: "Track placement drives, company visits, and student records." },
-    { title: "Library Management",icon:MdOutlineLocalLibrary, desc: "Issue, renew, and track books digitally." },
-    { title: "Hostel & Transport",icon:MdEmojiTransportation, desc: "Manage room allotments, mess, and bus routes with GPS tracking." },
-    { title: "HR & Payroll",icon:MdOutlineCurrencyRupee, desc: "Staff attendance, salary, PF, and performance reports." },
-    { title: "Mobile Apps for Students & Faculty",icon:HiOutlineDevicePhoneMobile, desc: "Access everything on the go." },
+    { title: "Digital Admissions",   url: "best-features-online-admission-management",  icon: HiOutlineCalendarDateRange, desc: "Manage applications, entrance tests, and seat allotment online." },
+    { title: "Course & Curriculum Management", url: "progress-report-card-management", icon: GiTennisCourt, desc: "Handle multiple programs, subjects, and batches with ease." },
+    { title: "Fee & Finance Automation", url: "fees-management-system", icon:PiMoneyWavyThin, desc: "Online fee collection with instant receipts and real-time tracking." },
+    { title: "Exams & Results",   url: "progress-report-card-management", icon:PiExamLight, desc: "Generate hall tickets, automate grading, publish results online." },
+    { title: "Placement Module",   url: "progress-report-card-management", icon:VscFileSubmodule, desc: "Track placement drives, company visits, and student records." },
+    { title: "Library Management",   url: "best-features-library-inventory-tracking", icon:MdOutlineLocalLibrary, desc: "Issue, renew, and track books digitally." },
+    { title: "Hostel & Transport",    url: "best-transport-gps-tracking-school-india", icon:MdEmojiTransportation, desc: "Manage room allotments, mess, and bus routes with GPS tracking." },
+    { title: "HR & Payroll",   url: "employee-payroll-management", icon:MdOutlineCurrencyRupee, desc: "Staff attendance, salary, PF, and performance reports." },
+    { title: "Mobile Apps for Students & Faculty",   url: "best-features-dedicated-mobile-apps", icon:HiOutlineDevicePhoneMobile, desc: "Access everything on the go." },
   ];
 
 

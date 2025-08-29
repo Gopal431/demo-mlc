@@ -174,6 +174,7 @@ benefits: [
 
   FeaturesDataMobile: {
     title: "Fee Tracking Made Easy ",
+    imgUrl:"/image/Fees_management.png",
     features: [
       {
         id: 1,

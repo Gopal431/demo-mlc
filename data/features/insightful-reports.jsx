@@ -166,6 +166,7 @@ export const insightfulReports = {
 
   FeaturesDataMobile: {
     title: "Reports Anytime on Mobile",
+    imgUrl:"/image/Fees_management.png",
     features: [
       {
         id: 1,

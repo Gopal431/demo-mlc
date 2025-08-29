@@ -165,6 +165,7 @@ export const biometricAttendanceManagement = {
 },
  FeaturesDataMobile :{
   title: "Key Features of Our Biometric System",
+  imgUrl:"/image/Attendance-Management.png",
   features: [
     {
       id: 1,

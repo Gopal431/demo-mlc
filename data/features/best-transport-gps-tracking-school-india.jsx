@@ -168,6 +168,7 @@ export const transportGpsTracking = {
 
   FeaturesDataMobile: {
     title: "Key Features on Mobile",
+     imgUrl:"/image/Transport-GPS.png",
     features: [
       {
         id: 1,

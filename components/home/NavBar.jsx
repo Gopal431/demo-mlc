@@ -91,8 +91,16 @@ const NavBar = () => {
         </Link>
       ),
     },
+    //  {
+    //   key: "2",
+    //   label: (
+    //     <Link href="/contact-us" className={isActive("/clients") + " block"}>
+    //       Contact Us
+    //     </Link>
+    //   ),
+    // },
     {
-      key: "2",
+      key: "3",
       label: (
         <Link
           href="/blog-listing"
@@ -174,6 +182,11 @@ const NavBar = () => {
                   <DownOutlined className="text-xs" />
                 </span>
               </Dropdown>
+            </li>
+            <li>
+              <Link href="/contact" className={isActive("/clients") + " block"}>
+          Contact Us
+        </Link>
             </li>
             <li>
               <Link href="/pricing" className={isActive("/pricing")}>
@@ -273,6 +286,9 @@ const NavBar = () => {
             </Link>
             <Link href="/pricing" className={isActive("/pricing") + " block"} onClick={() => setIsMobileMenuOpen(false)} >
               Pricing
+            </Link>
+             <Link href="/contact" className={isActive("/pricing") + " block"} onClick={() => setIsMobileMenuOpen(false)} >
+              Contact
             </Link>
             <Link href="/aboutus" className={isActive("/aboutus") + " block"} onClick={() => setIsMobileMenuOpen(false)} >
               About Us

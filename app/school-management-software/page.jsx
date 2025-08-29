@@ -20,8 +20,9 @@ function page() {
   const headerContent = {
     title: "School Management Software in India",
     highlight: "MyLeading Campus®",
-    clgImg:"/Assts/logo/girl.png",
-    description: "This ERP is designed to simplify school operations, improve communication, and ensure smooth administration—all in one platform.",
+    clgImg: "/Assts/logo/girl.png",
+    description:
+      "This ERP is designed to simplify school operations, improve communication, and ensure smooth administration—all in one platform.",
     imageSrc: "/Assts/hero.png",
     imageAlt: "MyLeading Campus Hero Image",
   };
@@ -30,13 +31,13 @@ function page() {
       title: "Digital Admissions",
       desc: "Collect forms, verify documents, and generate merit lists online.",
       icon: HiOutlineCalendarDateRange,
-        url: "",
+      url: "best-features-online-admission-management",
     },
     {
       title: "Smart Fee Management",
       desc: "Collect fees via UPI, cards, net banking, with automatic receipts.",
-      icon:PiMoneyWavyThin,
-       url: "fees-management-system",
+      icon: PiMoneyWavyThin,
+      url: "fees-management-system",
     },
     {
       title: "Attendance Automation",
@@ -47,20 +48,20 @@ function page() {
     {
       title: "Exam & Report Cards",
       desc: "Generate marksheets and progress reports instantly.",
-      icon:LiaDigitalTachographSolid,
-        url: "progress-report-card-management",
+      icon: LiaDigitalTachographSolid,
+      url: "progress-report-card-management",
     },
     {
       title: "Parent App",
       desc: "Real-time updates on homework, notices, and child performance.",
-      icon:GrAppleAppStore,
-        url: "",
+      icon: GrAppleAppStore,
+      url: "best-features-dedicated-mobile-apps",
     },
     {
       title: "Transport & GPS Tracking",
-      desc: "Ensure student safety with live bus tracking.",
-      icon:MdEmojiTransportation,
-        url: "best-transport-gps-tracking-school-india",
+      desc: "Ensure student safety with real-time GPS bus tracking alerts.",
+      icon: MdEmojiTransportation,
+      url: "best-transport-gps-tracking-school-india",
     },
   ];
   const cardsData = [
@@ -123,7 +124,6 @@ function page() {
       title: "Highly Customizable ERP",
       desc: "As per institution's unique needs",
     },
-    
   ];
 
   // Text content data
@@ -232,9 +232,13 @@ function page() {
         description={sectionData.description}
         items={sectionData.items}
         footer={sectionData.footer}
-         iconsColor={iconTextColor}
+        iconsColor={iconTextColor}
       />
-      <GraphSection2 featureData={features} textData={textContent} iconsColor={iconTextColor} />
+      <GraphSection2
+        featureData={features}
+        textData={textContent}
+        iconsColor={iconTextColor}
+      />
       <Section10Home sectionData={faqSectionData} />
       <ReadytoMakeYSS sectionData={readySectionData} />
     </>

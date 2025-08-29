@@ -11,15 +11,19 @@ import ContectSec3 from '../../components/contactUs/ContactSec3'
 
 const page = () => {
     return (
-        <div>
-            {/* className="flex justify-center items-center" */}
-            {/* Contact banner */}
-            <Contactbanner />
-            {/* sec2 */}
-            <ContactSec2 />
-            {/* contactForm */}
-            <ContectSec3 />
-        </div>
+  <div className="flex flex-col md:flex-col">
+  {/* sec2 */}
+  <div className="order-2 md:order-1">
+    <ContactSec2 />
+  </div>
+
+  {/* contactForm */}
+  <div className="order-1 md:order-2">
+    <ContectSec3 />
+  </div>
+</div>
+
+
     )
 }
 

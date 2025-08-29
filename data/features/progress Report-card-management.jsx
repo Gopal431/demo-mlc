@@ -170,6 +170,7 @@ export const progressReportCardManagement =  {
 
   FeaturesDataMobile: {
     title: "Report Cards on Mobile",
+     imgUrl:"/image/Progress report card.png",
     features: [
       {
         id: 1,

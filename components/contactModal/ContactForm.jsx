@@ -1,6 +1,7 @@
 "use client"
 
-import React, { useRef, useState, useEffect } from 'react'
+import React, { useState } from "react";
+import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn, FaPaperPlane } from "react-icons/fa";
 // import emailjs from '@emailjs/browser';
 // import ButtonReuse from './ButtonReuse';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -12,180 +13,130 @@ const ContactForm = ({
     lineColor,
     dotColor
 }) => {
-    const [loading, setLoading] = useState(false);
-    const form = useRef();
-
-    useEffect(() => {
-        if (formResetTrigger) {
-            form.current?.reset();
+      const [formData, setFormData] = useState({
+        last_name: "",
+        email: "",
+        phone: "",
+        subject: "",
+        description: "",
+      });
+    
+      const [status, setStatus] = useState("");
+    
+      const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.id]: e.target.value });
+      };
+    
+     const handleSubmit = async (e) => {
+      e.preventDefault();
+    
+      try {
+        const response = await fetch("/api/contact", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData),
+        });
+    
+        const result = await response.json();
+        setStatus(result.message);
+        if (response.ok) {
+          setFormData({
+            last_name: "",
+            email: "",
+            phone: "",
+            subject: "",
+            description: "",
+          });
         }
-    }, [formResetTrigger]);
+      } catch (error) {
+        console.error(error);
+        setStatus("⚠️ Error submitting form.");
+      }
+    };
 
-    const handleSubmit = async (e) => {
-        console.log("handleSubmit Called");
-        return;
-    }
-
-    // const handleSubmit = async (e) => {
-    //     setLoading(true);
-    //     try {
-    //         e.preventDefault();
-    //         const resp = await emailjs.sendForm('service_3whqxas', 'template_lkpj0bk', form.current, {
-    //             publicKey: 'F8x91dCE0cy34QMg2',
-    //         })
-    //         if (resp.status === 200) {
-    //             toast.success('Thank you for your message!, We will get back to you shortly.');
-    //             console.log('SUCCESS!');
-    //         } else {
-    //             toast.error('Something went wrong!, Please try again.');
-    //             console.log('ERROR');
-    //         }
-    //     } catch (error) {
-    //         console.log(error);
-    //     } finally {
-    //         setLoading(false);
-    //     }
-    // };
-
-    function LoadingOverlay() {
-        return (
-            <div className="loading-overlay">
-                <div className="spinner" />
-            </div>
-        );
-    }
 
     return (
         <>
-            {loading && <LoadingOverlay />}
-            <form onSubmit={handleSubmit} className="glass-form p-5" ref={form}>
-                <div className="row">
-                    <div className="col-12">
-                        <input
-                            type="text"
-                            name="from_name"
-                            required
-                            placeholder="Full Name"
-                            className="glass-input w-full mb-4"
-                        />
-                    </div>
-                    <div className="col-12">
-                        <input
-                            type="email"
-                            name="from_email"
-                            required
-                            placeholder="Your Email"
-                            className="glass-input w-full mb-4"
-                        />
-                    </div>
-                    <div className="col-12">
-                        <input
-                            type="text"
-                            name="from_phone"
-                            maxLength={10}
-                            minLength={10}
-                            required
-                            placeholder="Your Mobile Number"
-                            className="glass-input w-full mb-4"
-                        />
-                    </div>
-                    <div className="col-12">
-                        <textarea
-                            name="message"
-                            placeholder="Your Message"
-                            className="glass-input w-full mb-4"
-                        />
-                    </div>
-                    <div className="col-12">
-                        {/* <ButtonReuse
-                            title="Send Message"
-                            type="submit"
-                            className="w-[200px]"
-                            disabled={loading}
-                        /> */}
-                        <button href="https://www.school.myleadingcampus.com/?view=signup"
-                            className="px-6 py-2 bg-gradient-to-r from-[#622BFF] to-[#16B2D0] text-white font-semibold text-sm rounded-full shadow-sm hover:opacity-90 transition"
-                            title="Send Message"
-                            type="submit"
-                            disabled={loading}
-                        >
-                            Send Message
-                        </button>
-                    </div>
-                </div>
-            </form>
-            <style jsx>{`
-          .secbanner h2 {
-            position: relative;
-          }
-          .secbanner h2::before {
-            position: absolute;
-            content: '';
-            top: 60px;
-            left: 0;
-            right: inherit !important;
-            margin: auto;
-            width: ${lineWidth || '160px'};
-            height: 6px;
-            background-color: ${lineColor || '#d8f2f7'};
-            border-radius: 8px;
-          }
-          .secbanner h2::after {
-            position: absolute;
-            content: '';
-            top: 57px;
-            left: 0;
-            right: inherit !important;
-            margin: auto;
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background: ${dotColor || 'linear-gradient(to right, #16B2D0, #542DFF, #FF335E)'};
-            animation: animate2 8s linear infinite;
-          }
-          @keyframes animate2 {
-            0% {
-              left: 0;
-            }
-            100% {
-              left: ${lineWidth ? `calc(${lineWidth} - 10px)` : '26%'};
-            }
-          }
-
-          .glass-form {
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 15px;
-            backdrop-filter: blur(10px);
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-          }
-
-          .glass-input {
-            background: rgba(255, 255, 255, 0.2);
-            border:none;
-            border-bottom: 1px solid #0000ff38;
-            backdrop-filter: blur(10px);
-            padding: 10px;
-            border-radius: 0;
-            color: #333;
-          }
-
-          .glass-input:focus {
-            outline: none;
-            border-color: rgba(99, 62, 255, 0.5);
-            box-shadow: 0 0 8px rgba(99, 62, 255, 0.3);
-          }
-
-
-          @media (max-width: 991px) {
-            .secbanner h2::before {
-              top: 42px;
-            }
-            .secbanner h2::after {
-              top: 40px;
-            }
-          }
-        `}</style>
+            {/* {loading && <LoadingOverlay />} */}
+           <div className="p-6">
+                    
+                     <form onSubmit={handleSubmit} className="space-y-2">
+                       <div>
+                         <label htmlFor="last_name" className="block mb-1 font-medium">
+                           Your Name
+                         </label>
+                         <input
+                           type="text"
+                           id="last_name"
+                           value={formData.last_name}
+                           onChange={handleChange}
+                           className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-300 transition"
+                           required
+                         />
+                       </div>
+         
+                       <div>
+                         <label htmlFor="email" className="block mb-1 font-medium">
+                           Email Address
+                         </label>
+                         <input
+                           type="email"
+                           id="email"
+                           value={formData.email}
+                           onChange={handleChange}
+                           className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-300 transition"
+                           required
+                         />
+                       </div>
+         
+                       <div>
+                         <label htmlFor="phone" className="block mb-1 font-medium">
+                           Phone Number
+                         </label>
+                         <input
+                           type="tel"
+                           id="phone"
+                           value={formData.phone}
+                           onChange={handleChange}
+                           className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-300 transition"
+                         />
+                       </div>
+         
+                     
+         
+                       <div>
+                         <label htmlFor="description" className="block mb-1 font-medium">
+                           Your Message
+                         </label>
+                         <textarea
+                           id="description"
+                           value={formData.description}
+                           onChange={handleChange}
+                           className="w-full p-2 border border-gray-300 rounded-md min-h-[100px] resize-y focus:outline-none focus:ring-2 focus:ring-blue-300 transition"
+                           required
+                         ></textarea>
+                       </div>
+         
+                       <button
+                         type="submit"
+                         className="flex items-center justify-center gap-2 bg-gradient-to-br from-blue-500 to-blue-400 text-white font-semibold py-2 px-5 rounded-full hover:scale-105 hover:shadow-md transition duration-300"
+                       >
+                         <FaPaperPlane /> Send Message
+                       </button>
+                     </form>
+         
+                     {status && (
+                       <p
+                         className={`mt-4 text-center font-medium ${
+                           status.startsWith("✅")
+                             ? "text-green-600"
+                             : "text-red-600"
+                         }`}
+                       >
+                         {status}
+                       </p>
+                     )}
+                   </div>
         </>
     )
 }

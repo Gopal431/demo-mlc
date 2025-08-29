@@ -152,6 +152,7 @@ FeaturesDataOfLaptop : {
 
 FeaturesDataMobile :{
   title: "Automatic Substitution Alerts for Teachers – Real-Time Notifications",
+      imgUrl:"/image/Timetable_Management.png",
   features: [
     {
       id: 1,

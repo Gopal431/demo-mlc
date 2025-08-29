@@ -9,12 +9,12 @@ import Section10Home from "@/components/home/Section10Home";
 import WhyChooseMLC from "@/components/services/WhyChooseMLC ";
 import BenefitsforSchools from "@/components/services/BenefitsforSchools";
 import ReadytoMakeYSS from "@/components/services/ReadytoMakeYSS";
-import { FaUsers, FaClock, FaShieldAlt, FaBolt } from "react-icons/fa";
+import { FaUsers, FaClock, FaShieldAlt, FaBolt, FaHotel, FaChalkboardTeacher } from "react-icons/fa";
 import { HiOutlineCalendarDateRange } from "react-icons/hi2";
 import {
   MdEmojiTransportation,
   MdOutlineCurrencyRupee,
-  MdOutlineLocalLibrary,
+  MdOutlineSchedule,
 } from "react-icons/md";
 import { GrAppleAppStore } from "react-icons/gr";
 import { IoAnalytics } from "react-icons/io5";
@@ -26,7 +26,7 @@ function page() {
   const headerContent = {
     title: "School ERP Software in India",
     highlight: "MyLeading Campus®",
-    clgImg: "/Assts/schoolGirls.png",
+    clgImg: "/image/School-ERP-girl.png",
     description:
       "Managing a school is more than just teaching. From admissions to attendance, fees to exams, payroll to transport — administrators deal with hundreds of tasks daily. Doing this manually wastes time, creates errors, and frustrates parents. With MyLeading Campus®, schools can manage everything in one platform — simple, secure, and smart.",
     imageSrc: "/Assts/hero.png",
@@ -38,52 +38,74 @@ function page() {
       title: "Digital Admissions & Enrolment",
       icon: HiOutlineCalendarDateRange,
       desc: "Manage student applications, verification, and enrolment online.",
+       url: "best-features-online-admission-management",
     },
     {
       title: "Smart Fee Collection & Reports",
       icon: PiMoneyWavyThin,
       desc: "Collect fees digitally with automated receipts and analytics.",
+       url: "fees-management-system",
     },
     {
       title: "HR & Payroll Management",
       icon: MdOutlineCurrencyRupee,
       desc: "Track staff attendance, salary, PF, and performance reports.",
+       url: "employee-payroll-management",
     },
     {
       title: "Library & Inventory Tracking",
       icon: MdOutlineCurrencyRupee,
       desc: "Issue, renew, and manage books and resources efficiently.",
+          url: "best-features-library-inventory-tracking",
     },
     {
       title: "Attendance via Mobile or Biometric",
       icon: SiBasicattentiontoken,
       desc: "Automate attendance for students and staff with instant updates.",
+      url: "best-biometric-attendance-system-school-india",
     },
     {
       title: "Homework & Assignment Uploads",
       icon: CgAssign,
       desc: "Teachers can upload and share homework digitally.",
+      url: "progress-report-card-management",
     },
     {
       title: "Marks & Exam Result Management",
       icon: PiExamLight,
       desc: "Generate marksheets, report cards, and progress reports instantly.",
-    },
-    {
-      title: "Performance Analytics",
-      icon: IoAnalytics,
-      desc: "Analyze student performance with comprehensive dashboards.",
+       url: "progress-report-card-management",
     },
     {
       title: "Dedicated Mobile Apps",
       icon: GrAppleAppStore,
       desc: "Keep parents and students updated with real-time notifications and updates.",
+            url: "best-biometric-attendance-system-school-india",
     },
     {
       title: "GPS Bus Tracking",
       icon: MdEmojiTransportation,
       desc: "Ensure student safety with live bus tracking.",
+       url: "best-transport-gps-tracking-school-india",
     },
+    {
+    title: "Timetable & Substitution Management",
+    icon: MdOutlineSchedule,
+    desc: "Smart scheduling with automated timetable and substitution management.",
+     url: "best-biometric-attendance-system-school-india",
+  },
+  {
+    title: "Hostel Management",
+    icon: FaHotel,
+    desc: "Simplify hostel operations with room allocation, and daily management.",
+     url: "best-hostel-management-software-school-india",
+  },
+  {
+    title: "Online Classes",
+    icon: FaChalkboardTeacher,
+    desc: "Conduct interactive online classes with live streaming and recordings.",
+    url: "best-features-online-admission-management",
+  },
   ];
 
   const cardsData = [

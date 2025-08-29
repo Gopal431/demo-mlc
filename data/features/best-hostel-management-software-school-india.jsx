@@ -167,6 +167,7 @@ export const hostelManagement = {
 
   FeaturesDataMobile: {
     title: "Key Features on Mobile",
+    imgUrl:"/image/School-ERP.png",
     features: [
       {
         id: 1,

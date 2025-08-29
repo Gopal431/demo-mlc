@@ -7,6 +7,10 @@ import { insightfulReports } from "./insightful-reports";
 import { progressReportCardManagement } from "./progress Report-card-management";
 import { timetableSubstitutionManagement } from "./best-timetable-substitution-management-school-india";
 import { transportGpsTracking } from "./best-transport-gps-tracking-school-india";
+import { onlineClassesManagement } from "./best-features-online-classes";
+import { mobileAppManagement } from "./best-features-dedicated-mobile-apps";
+import { admissionManagement } from "./best-features-online-admission-management";
+import { libraryManagement } from "./best-features-library-inventory-tracking";
 
 export default {
    "attendance-management":attendanceManagement,
@@ -17,5 +21,10 @@ export default {
    "progress-report-card-management":progressReportCardManagement,
    "best-timetable-substitution-management-school-india":timetableSubstitutionManagement,
    "best-transport-gps-tracking-school-india":transportGpsTracking,
-   "best-hostel-management-software-school-india":hostelManagement
+   "best-hostel-management-software-school-india":hostelManagement,
+   "best-features-online-classes":onlineClassesManagement,
+   "best-features-dedicated-mobile-apps":mobileAppManagement,
+   "best-features-online-admission-management":admissionManagement,
+   "best-features-library-inventory-tracking":libraryManagement
+
 }
