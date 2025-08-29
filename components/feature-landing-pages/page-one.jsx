@@ -46,44 +46,56 @@ function PageOne({ parsedFeature }) {
                 </div>
 
                 {/* Right Form */}
-                <section className="w-full md:w-1/2">
-                  <div className="mx-auto max-w-6xl px-4 py-10 ">
-                    <div className="rounded-2xl border border-gray-200 bg-gray-100 p-3 shadow-sm md:p-6 flex flex-col gap-3">
-                      {/* Top row */}
-                      <div className="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
-                        <div className="flex items-center gap-4">
-                          <h2 className="text-pretty text-lg font-semibold text-gray-900 md:text-xl">
-                            Why choose MyLeading Campus
-                          </h2>
-                        </div>
+           <section className="w-full md:w-1/2 px-4 md:px-0">
+  <div className="mx-auto max-w-6xl py-6 md:py-10">
+    <div className="rounded-2xl border border-gray-200 bg-gray-100 p-4 sm:p-6 md:p-8 flex flex-col gap-4">
+      {/* Top row */}
+      <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
+        <div className="flex items-center gap-2 md:gap-4">
+          <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-900">
+            Why choose MyLeading Campus
+          </h2>
+        </div>
+      </div>
 
-                      
-                      </div>
+      {/* Tagline */}
+      <p className="text-sm sm:text-base md:text-lg text-gray-600">
+        MyLeading Campus is the most popular ERP library for School management.
+      </p>
 
-                      {/* Tagline */}
-                      <p className="  text-base  text-gray-600">
-                        MyLeading Campus is the most popular ERP library for
-                        School management.
-                      </p>
+      {/* Stats */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <Stat 
+          value="4.5+" 
+          label="Average Ratings for Mobile Apps" 
+          Icon={() => <FaStar className="text-[#603bfc]" />} 
+        />
+        <Stat 
+          value="100+" 
+          label="Registered Schools" 
+          Icon={() => <FaSchool className="text-[#603bfc]" />} 
+        />
+        <Stat 
+          value="12500+" 
+          label="Active Students" 
+          Icon={() => <IoSchool className="text-[#603bfc]" />} 
+        />
+      </div>
 
-                      {/* Stats */}
-                      <div className=" grid grid-cols-1 gap-8 md:grid-cols-3">
-                        <Stat value="4.5+" label="Average Ratings for Mobile Apps" Icon={()=>(<FaStar className="text-[#603bfc]"/>)} />
-                        <Stat value="100+" label="Registered Schools" Icon={()=>(<FaSchool className="text-[#603bfc]"/>)}/>
-                        <Stat value="12500+" label="Active Students" Icon={()=>(<IoSchool className="text-[#603bfc]"/>)}/>
-                      </div>
-                        <div className=" mt-2 w-full ">
-                          <a
-                            href="https://wa.me/9874344994?text=Hello"
-                            target="_blank"
-                            className="gap-2 flex max-w-[200px] justify-center items-center rounded-full bg-gradient-to-r from-[#622BFF] to-[#16B2D0] px-3 py-2 text-sm font-semibold text-white transition hover:bg-blue-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
-                          >
-                            Book a Demo <GrSchedule className="text-lg" />
-                          </a>
-                        </div>
-                    </div>
-                  </div>
-                </section>
+      {/* Button */}
+      <div className="mt-4 w-full flex justify-center md:justify-start">
+        <a
+          href="https://wa.me/9874344994?text=Hello"
+          target="_blank"
+          className="flex gap-2 max-w-[200px] justify-center items-center rounded-full bg-gradient-to-r from-[#622BFF] to-[#16B2D0] px-4 py-2 text-sm sm:text-base font-semibold text-white transition hover:bg-blue-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+        >
+          Book a Demo <GrSchedule className="text-lg sm:text-xl" />
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
               </div>
 
               <div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
